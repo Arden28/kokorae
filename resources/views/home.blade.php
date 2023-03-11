@@ -304,8 +304,8 @@
                         Pertinent pour les PMEs, ayant une équipe de plus de 2 employés
                     </p>
                     <div class="flex items-baseline justify-center my-8">
-                        <span class="mr-2 text-5xl font-extrabold">$99</span>
-                        <span class="text-gray-500 dark:text-gray-400" dark:text-gray-400>/month</span>
+                        <span class="mr-2 text-5xl font-extrabold">32.500 XAF</span>
+                        <span class="text-gray-500 dark:text-gray-400" dark:text-gray-400>/mois</span>
                     </div>
                     <!-- List -->
                     <ul role="list" class="mb-8 space-y-4 text-left">
@@ -353,8 +353,9 @@
         </div>
       </section>
     <!-- End block -->
+
     <!-- Start block -->
-    <section class="bg-white dark:bg-gray-900">
+    {{-- <section class="bg-white dark:bg-gray-900">
         <div class="max-w-screen-xl px-4 pb-8 mx-auto lg:pb-24 lg:px-6 ">
             <h2 class="mb-6 text-3xl font-extrabold tracking-tight text-center text-gray-900 lg:mb-8 lg:text-3xl dark:text-white">Frequently asked questions</h2>
             <div class="max-w-screen-md mx-auto">
@@ -420,15 +421,16 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
     <!-- End block -->
+
     <!-- Start block -->
     <section class="bg-gray-50 dark:bg-gray-800">
         <div class="max-w-screen-xl px-4 py-8 mx-auto lg:py-16 lg:px-6">
             <div class="max-w-screen-sm mx-auto text-center">
-                <h2 class="mb-4 text-3xl font-extrabold leading-tight tracking-tight text-gray-900 dark:text-white">Start your free trial today</h2>
-                <p class="mb-6 font-light text-gray-500 dark:text-gray-400 md:text-lg">Try Landwind Platform for 30 days. No credit card required.</p>
-                <a href="#" class="text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 focus:outline-none dark:focus:ring-purple-800">Free trial for 30 days</a>
+                <h2 class="mb-4 text-3xl font-extrabold leading-tight tracking-tight text-gray-900 dark:text-white">Commencez votre essai gratuit aujourd'hui</h2>
+                <p class="mb-6 font-light text-gray-500 dark:text-gray-400 md:text-lg">Essayez Koverae Stadard pendant 30 jours. Pas de carte bancaire requise</p>
+                <a href="#" class="text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 focus:outline-none dark:focus:ring-purple-800">Essaie gratuit pendant 30 jours</a>
             </div>
         </div>
     </section>
