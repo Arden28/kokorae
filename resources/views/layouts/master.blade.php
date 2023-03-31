@@ -54,7 +54,7 @@
       <nav class="site-nav">
         <div class="logo">
           <!-- <a href="index.html" class="text-white">Koverae<span class="text-black">.</span></a> -->
-          <img src="{{ asset('assets/images/logo/logo.png')}}" width="200px" height="70px" alt="">
+          <img src="{{ asset('assets/images/logo/logo.png')}}" width="200px" height="70px" alt="Koverae Logo">
         </div>
         <div class="row align-items-center">
 
