@@ -67,7 +67,8 @@
             </ul>
 
             <ul class="js-clone-nav d-none d-lg-inline-block text-left site-menu float-right menu-absolute">
-              <li class="cta-button"><a href="https://koverae.com/" target="_blank">Réserver Gratuitement</a></li>
+                <li class="cta-button"><a href="https://dashboard.koverae.com/auth/login?from=nav_link" target="_blank">Se connecter</a></li>
+              <li class="cta-button"><a href="https://koverae.com/" target="_blank">Réserver une démo</a></li>
             </ul>
 
             <a href="#" class="burger light ml-auto site-menu-toggle js-menu-toggle d-block d-lg-none" data-toggle="collapse" data-target="#main-navbar">

@@ -314,7 +314,7 @@
             <li class="d-flex"><span class="feather-check-square mr-2 mt-1"></span><span>Support Client à distance (SMS, Email, Whatsapp)</span></li>
           </ul>
           <div>
-            <a href="#" class="btn btn-primary">Commencer</a>
+            <a target="__blank" href="https://dashboard.koverae.com/auth/register?nav_from=pricing_plan" class="btn btn-primary">Commencer</a>
           </div>
         </div>
       </div>
@@ -355,7 +355,7 @@
             <li class="d-flex"><span class="feather-check-square mr-2 mt-1"></span><span>Support Client en présentiel</span></li>
           </ul>
           <div>
-            <a href="#" class="btn btn-primary">Commencer</a>
+            <a target="__blank" href="https://dashboard.koverae.com/auth/register?nav_from=pricing_plan" class="btn btn-primary">Commencer</a>
           </div>
         </div>
       </div>
@@ -395,7 +395,7 @@
             <li class="d-flex"><span class="feather-check-square mr-2 mt-1"></span><span>Rapports journaliers par emails, SMS, Whatsapp</span></li>
           </ul>
           <div>
-            <a href="#" class="btn btn-primary">Commencer</a>
+            <a target="__blank" href="https://dashboard.koverae.com/auth/register?nav_from=pricing_plan" class="btn btn-primary">Commencer</a>
           </div>
         </div>
       </div>
