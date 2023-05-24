@@ -15,7 +15,7 @@
           <strong>Koverae</strong> vous offre une gamme de fonctionnalités qui simplifient la gestion de l'ensemble du processus commercial, de la gestion des stocks à la facturation en passant par les commandes et les expéditions.
         </p>
         <form action="#" class="sign-up-form d-flex" data-aos="fade-up" data-aos-delay="200">
-          <input type="text" class="form-control" placeholder="Enter email address">
+          <input type="text" class="form-control" placeholder="Votre numéro de téléphone">
           <input type="submit" class="btn btn-primary" value="Réservez une démo">
         </form>
 
