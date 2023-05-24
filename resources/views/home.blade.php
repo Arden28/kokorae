@@ -311,7 +311,7 @@
             <li class="d-flex"><span class="feather-check-square mr-2 mt-1"></span><span>Gestion Inventaire</span></li>
             <li class="d-flex"><span class="feather-check-square mr-2 mt-1"></span><span>Gestion Point de Ventes</span></li>
             <li class="d-flex"><span class="feather-check-square mr-2 mt-1"></span><span>Statistiques de base</span></li>
-            <li class="d-flex"><span class="feather-check-square mr-2 mt-1"></span><span>Support Client à distance (SMS, Email, Whatsapp)</span></li>
+            <li class="d-flex"><span class="feather-check-square mr-2 mt-1"></span><span>Support Client(SMS, Email, Whatsapp)</span></li>
           </ul>
           <div>
             <a target="__blank" href="https://dashboard.koverae.com/auth/register?nav_from=pricing_plan" class="btn btn-primary">Commencer</a>
