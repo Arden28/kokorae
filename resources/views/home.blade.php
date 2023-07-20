@@ -14,10 +14,7 @@
         <p class="text-white mb-4" data-aos="fade-up" data-aos-delay="100">
           <strong>Koverae</strong> vous offre une gamme de fonctionnalités qui simplifient la gestion de l'ensemble du processus commercial, de la gestion des stocks à la facturation en passant par les commandes et les expéditions.
         </p>
-        <form action="#" class="sign-up-form d-flex" data-aos="fade-up" data-aos-delay="200">
-          <input type="text" class="form-control" placeholder="Votre numéro de téléphone">
-          <input type="submit" class="btn btn-primary" value="Réservez une démo">
-        </form>
+        <a class="btn btn-primary" href="https://koverae.com/" target="_blank">Réserver une démo</a>
 
       </div>
 
@@ -73,12 +70,13 @@
       <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up">
         <div class="unit-4 d-flex">
           <div class="unit-4-icon mr-4">
-            <span class="feather-trending-up"></span>
+            {{-- <span class="feather-trending-up"></span> --}}
+            <img width="50px" height="50px" src="{{ asset('assets/images/apps/sales.png') }}" alt="">
           </div>
           <div>
             <h3><strong>Ventes</strong></h3>
             <p>
-              Avec ce module, vous pouvez facilement créer des devis, des factures et des bons de commande, suivre les paiements et les factures en attente, et gérer les relations avec les clients.
+                Optimisez et controllez vos ventes. Créez facilement des devis, factures et bons de commande, suivez les paiements et gérez vos clients en toute simplicité.
             </p>
             <p><a href="#">En savoir +</a></p>
           </div>
@@ -87,12 +85,14 @@
       <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="100">
         <div class="unit-4 d-flex">
           <div class="unit-4-icon mr-4">
-            <span class="feather-package"></span>
+            {{-- <span class="feather-package"></span> --}}
+            <img width="50px" height="50px" src="{{ asset('assets/images/apps/inventory.png') }}" alt="">
           </div>
           <div>
             <h3><strong>Inventaire</strong></h3>
             <p>
-              Assurez la traçabilité de votre inventaire en toute simplicité grâce à notre module de gestion d'inventaire.
+                Simplifiez la gestion de votre inventaire. Gardez une traçabilité optimale de vos stocks, suivez vos entrées et sorties de marchandises en toute simplicité.
+                Prenez des décisions éclairées pour votre entreprise.
             </p>
             <p><a href="#">En savoir +</a></p>
           </div>
@@ -101,12 +101,13 @@
       <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="200">
         <div class="unit-4 d-flex">
           <div class="unit-4-icon mr-4">
-            <span class="feather-users"></span>
+            {{-- <span class="feather-users"></span> --}}
+            <img width="50px" height="50px" src="{{ asset('assets/images/apps/crm.png') }}" alt="">
           </div>
           <div>
             <h3><strong>CRM</strong></h3>
             <p>
-              Notre module de gestion de clients et fournisseurs facilite la gestion des relations commerciales pour une communication optimale et une fidélisation durable.
+                Soyez toujours connecté à vos clients et fournisseurs. Simplifiez la communication, suivez les interactions importantes, gérez les données clés et fidélisez vos partenaires commerciaux. Simplifiez votre entreprise et offrez une expérience client exceptionnelle avec notre application de gestion dédiée !
             </p>
             <p><a href="#">En savoir +</a></p>
           </div>
@@ -117,12 +118,13 @@
       <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="300">
         <div class="unit-4 d-flex">
           <div class="unit-4-icon mr-4">
-            <span class="feather-pie-chart"></span>
+            {{-- <span class="feather-pie-chart"></span> --}}
+            <img width="50px" height="50px" src="{{ asset('assets/images/apps/finance.png') }}" alt="">
           </div>
           <div>
-            <h3><strong>Analyse</strong></h3>
+            <h3><strong>Finance & Factures</strong></h3>
             <p>
-              Notre module de statistiques fournit des insights clés pour améliorer votre prise de décision et votre performance commerciale.
+                Optimisez vos finances et gérez vos factures en toute simplicité. Suivez vos revenus et dépenses, gérez les factures entrantes et sortantes, et gardez une vue d'ensemble de votre santé financière. Gagnez du temps et de restez organisé, tout en vous assurant que votre gestion financière est en ordre.
             </p>
             <p><a href="#">En savoir +</a></p>
           </div>
@@ -131,12 +133,13 @@
       <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="400">
         <div class="unit-4 d-flex">
           <div class="unit-4-icon mr-4">
-            <span class="feather-shopping-bag"></span>
+            {{-- <span class="feather-shopping-bag"></span> --}}
+            <img width="50px" height="50px" src="{{ asset('assets/images/apps/pos.png') }}" alt="">
           </div>
           <div>
             <h3><strong>Point de Vente</strong></h3>
             <p>
-              Notre module point de vente permet des transactions rapides et fluides, une gestion de caisse optimale et une expérience client personnalisée.
+                Gérez vos transactions en toute fluidité, suivez vos ventes en temps réel et gérez votre inventaire avec facilité. Encaissez les paiements rapidement, émettez des factures et suivez vos stocks en temps réel. Optimisez votre processus de vente pour une expérience client exceptionnelle.
             </p>
             <p><a href="#">En savoir +</a></p>
           </div>
@@ -145,12 +148,14 @@
       <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="500">
         <div class="unit-4 d-flex">
           <div class="unit-4-icon mr-4">
-            <span class="feather-users"></span>
+            {{-- <span class="feather-users"></span> --}}
+            <img width="50px" height="50px" src="{{ asset('assets/images/apps/hr.png') }}" alt="">
           </div>
           <div>
             <h3><strong>Ressources Humaines</strong></h3>
             <p>
-              Notre module Ressources Humaines facilite la gestion des employés avec des fonctionnalités pour la paie, la gestion des absences, et plus encore.
+                Simplifiez vos processus de gestion d'employer, de suivi des performances, et de gestion des congés et absences.
+              {{-- Cette application facilite la gestion des employés avec des fonctionnalités pour la paie, la gestion des absences, et bien plus encore. --}}
             </p>
             <p><a href="#">En savoir +</a></p>
           </div>
@@ -166,8 +171,8 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-7 mx-auto text-center">
-        <h2 class="text-white mb-4">Commencez maintenant ! C'est gratuit !!</h2>
-        <p class="mb-0"><a href="https://koverae.com/" rel="noopener" class="btn btn-primary">Commencer gratuitement</a></p>
+        <h5 class="text-white mb-4">N'attendez plus pour découvrir tous les avantages de <strong>Koverae</strong>, essayez gratuitement dès maintenant !</h5>
+        <p class="mb-0"><a href="https://dashboard.koverae.com/auth/register?from=site-section&&utm=start_trial" target="_blank" rel="noopener" class="btn btn-primary">Commencer gratuitement</a></p>
       </div>
     </div>
   </div>
@@ -282,22 +287,6 @@
 
         <div class="testimonial--wrap">
           <div class="owl-single owl-carousel no-dots no-nav">
-            <div class="testimonial-item">
-              <div class="d-flex align-items-center mb-4">
-                <div class="photo mr-3">
-                  <img src="{{ asset('assets/images/person_4-min.png')}}" alt="Image" class="img-fluid">
-                </div>
-                <div class="author">
-                  <cite class="d-block mb-0">Samba Christ</cite>
-                  <span>PDG, Sokisa.</span>
-                </div>
-              </div>
-              <blockquote>
-                <p>&ldquo;
-                  Grâce à Koverae, nous avons considérablement amélioré la visibilité de notre inventaire et avons pu mieux gérer nos ventes et nos fournisseurs. Nous avons également été en mesure d'optimiser nos processus de ressources humaines avec les fonctionnalités de gestion de la paie et des absences. Nous sommes très satisfaits de la solution offerte par cette startup de logiciel.
-                  &rdquo;</p>
-              </blockquote>
-            </div>
 
             <div class="testimonial-item">
               <div class="d-flex align-items-center mb-4">
@@ -306,7 +295,7 @@
                 </div>
                 <div class="author">
                   <cite class="d-block mb-0">MASSAMBA Judie Brelle</cite>
-                  <span>PDG, Marie Reine SARL.</span>
+                  <span>Gérante, ETS Marie Reine.</span>
                 </div>
               </div>
               <blockquote>
@@ -323,7 +312,7 @@
                 </div>
                 <div class="author">
                   <cite class="d-block mb-0">MALONGA Charly</cite>
-                  <span>PDG, Banéo, SA.</span>
+                  <span>Directeur Général, <strong>Banéo SARL</strong>.</span>
                 </div>
               </div>
               <blockquote>
@@ -344,12 +333,12 @@
   </div>
 </div>
 
- <!-- <div class="site-section bg-light" id="blog-section">
+<div class="site-section bg-light" id="blog-section">
   <div class="container">
     <div class="row">
       <div class="col-7 mb-4 position-relative text-center mx-auto">
-        <h2 class="font-weight-bold text-center">Our Blog Posts</h2>
-        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+        <h2 class="font-weight-bold text-center">Notre Blog</h2>
+        <p>Profitez de nos derniers articles de blogs.</p>
       </div>
 
     </div>
@@ -358,12 +347,12 @@
 
       <div class="col-md-6 mb-5 mb-lg-0 col-lg-4">
         <div class="blog_entry">
-          <a href="#"><img src="{{ asset('assets/images/img_h_3-min.png')}}" alt="Free Website Template by Free-Template.co" class="img-fluid"></a>
+          <a href="#"><img src="{{ asset('assets/images/img_h_3-min.jpg')}}" alt="Free Website Template by Free-Template.co" class="img-fluid"></a>
           <div class="p-4 bg-white">
             <h3><a href="#">Far far away, behind the word mountains</a></h3>
             <span class="date">April 25, 2019</span>
             <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-            <p class="more"><a href="#">Continue reading...</a></p>
+            <p class="more"><a href="#">Continuer la lecture...</a></p>
           </div>
         </div>
       </div>
@@ -375,7 +364,7 @@
             <h3><a href="#">Far far away, behind the word mountains</a></h3>
             <span class="date">April 25, 2019</span>
             <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-            <p class="more"><a href="#">Continue reading...</a></p>
+            <p class="more"><a href="#">Continuer la lecture...</a></p>
           </div>
         </div>
       </div>
@@ -387,7 +376,7 @@
             <h3><a href="#">Far far away, behind the word mountains</a></h3>
             <span class="date">April 25, 2019</span>
             <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-            <p class="more"><a href="#">Continue reading...</a></p>
+            <p class="more"><a href="#">Continuer la lecture...</a></p>
           </div>
         </div>
       </div>
@@ -398,7 +387,7 @@
       </div>
     </div>
   </div>
-</div> -->
+</div>
 
 <div class="site-section overlay site-cover-2" style="background-image: url('{{asset('assets/images/img_v_3-min.jpg')}}')">
   <div class="container">
