@@ -13,4 +13,25 @@
 <script src="{{ asset('assets/js/jquery.fancybox.min.js')}}"></script>
 <script src="{{ asset('assets/js/custom.js')}}"></script>
 
+<script>
+$(document).ready(function() {
+    var siteNav = $('.site-nav');
+    var heroSection = $('#hero'); // Change to your actual hero section selector
+
+    var hasHero = heroSection.length > 0;
+
+    var heroOffset = hasHero ? heroSection.offset().top + heroSection.outerHeight() : 0;
+
+    $(window).scroll(function() {
+        var scrollPosition = $(window).scrollTop();
+
+        if ((hasHero && scrollPosition > heroOffset) || !hasHero) {
+            siteNav.addClass('sticky');
+        } else {
+            siteNav.removeClass('sticky');
+        }
+    });
+});
+
+</script>
 @livewireScripts

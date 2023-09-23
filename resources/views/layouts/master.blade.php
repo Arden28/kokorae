@@ -11,7 +11,8 @@
 
   @include('includes.main-css')
 
-  <title>@yield('page_title') | Koverae.com</title>
+  <title>@yield('page_title') | Koverae</title>
+
 
     <script type="application/ld+json">{
 		"@context": "http://schema.org",
@@ -21,7 +22,7 @@
         }
     </script>
     <meta name="theme-color" content="#478ac9">
-    <meta property="og:title" content="Commençons à développer votre entreprise.">
+    <meta property="og:title" content="Logiciel de gestion d'entreprise.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.koverae.com">
     <!-- Google tag (gtag.js) -->
@@ -69,7 +70,7 @@
       <nav class="site-nav">
         <div class="logo">
             <a href="{{ route('home') }}" class="text-white">
-                <img src="{{ asset('assets/images/logo/logo.png')}}" width="200px" height="70px" alt="Koverae Logo">
+                <img src="{{ asset('assets/images/logo/logo-1.png')}}" alt="Koverae Logo">
             </a>
           {{-- <img src="{{ asset('assets/images/logo/logo.png')}}" width="200px" height="70px" alt="Koverae Logo"> --}}
         </div>
@@ -79,13 +80,14 @@
           <div class="col-12 col-sm-12 col-lg-12 site-navigation text-center">
             <ul class="js-clone-nav d-none d-lg-inline-block text-left site-menu">
               <li class="active"><a href="{{ route('home') }}">Acceuil</a></li>
-              <li><a href="#features">Fonctionnalités</a></li>
-              <li><a href="#pricing">Prix</a></li>
+              <li><a href="{{ route('home') }}#features">Fonctionnalités</a></li>
+              <li><a href="{{ route('home') }}#pricing">Nos prix</a></li>
+              <li><a href="{{ route('blogs.index') }}">Blog</a></li>
             </ul>
 
             <ul class="js-clone-nav d-none d-lg-inline-block text-left site-menu float-right menu-absolute">
-                <li class="cta-button"><a href="https://dashboard.koverae.com/auth/login?from=nav_link" target="_blank">Se connecter</a></li>
-              <li class="cta-button"><a href="https://koverae.com/" target="_blank">Réserver une démo</a></li>
+                <li class="cta-button"><a href="https://dashboard.koverae.com/auth/login?from=nav_link&&uip=" target="_blank">Se connecter</a></li>
+              <li class="cta-button"><a href="{{ route('demo') }}">Réserver une démo</a></li>
             </ul>
 
             <a href="#" class="burger light ml-auto site-menu-toggle js-menu-toggle d-block d-lg-none" data-toggle="collapse" data-target="#main-navbar">
@@ -134,7 +136,7 @@
                   <div class="widget">
                     <ul class="links list-unstyled">
                       <li><a href="#">Acceuil</a></li>
-                      <li><a href="#">A propos de nous</a></li>
+                      <li><a href="{{ route('about') }}">A propos de nous</a></li>
                     </ul>
                   </div>
                 </div>
@@ -166,18 +168,18 @@
             </div>
           </div>
         </div>
-      </div>
+    </div>
 
 
-      <div id="overlayer"></div>
+      {{-- <div id="overlayer"></div>
       <div class="loader">
         <div class="spinner-border" role="status">
           <span class="sr-only">Chargement...</span>
         </div>
-      </div>
+      </div> --}}
 
       @include('includes.main-js')
 
-
+      @yield('scripts')
     </body>
     </html>

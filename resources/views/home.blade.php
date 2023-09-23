@@ -1,11 +1,11 @@
 @extends('layouts.master')
 
-@section('page_title', 'Commençons à développer votre entreprise')
+@section('page_title', "Logiciel de gestion d'entreprise")
 
 
 @section('content')
 
-<div class="hero-slant overlay" data-stellar-background-ratio="0.5" style=" background-image: url('{{asset('assets/images/hero-min.jpg')}}')">
+<div class="hero-slant overlay" id="hero" data-stellar-background-ratio="0.5" style=" background-image: url('{{asset('assets/images/hero-min.jpg')}}')">
 
   <div class="container">
     <div class="row align-items-center justify-content-between">
@@ -60,108 +60,105 @@
 
 
  <div class="site-section" id="features">
-  <div class="container">
-    <div class="row mb-5">
-      <div class="col-12 text-center"  data-aos="fade-up">
-        <h2 class="heading font-weight-bold mb-3">Une app pour chacun de vos besoins</h2>
-      </div>
+
+
+  <div class="container app-section">
+    <div class="">
+      <h2 class="col-12 title-center mb-5" data-aos="fade-up" data-aos-delay="500">
+          Une <b>app</b> pour chacun de vos besoins
+      </h2>
     </div>
-    <div class="row align-items-stretch">
-      <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up">
-        <div class="unit-4 d-flex">
-          <div class="unit-4-icon mr-4">
-            {{-- <span class="feather-trending-up"></span> --}}
-            <img width="50px" height="50px" src="{{ asset('assets/images/apps/sales.png') }}" alt="">
-          </div>
-          <div>
-            <h3><strong>Ventes</strong></h3>
-            <p>
-                Optimisez et controllez vos ventes. Créez facilement des devis, factures et bons de commande, suivez les paiements et gérez vos clients en toute simplicité.
-            </p>
-            <p><a href="#">En savoir +</a></p>
-          </div>
+
+    <div class="row">
+
+        <div class="col col-lg-4 d-flex flex-column align-items-center apps-list px-3">
+            <h3 class="app_list_col_title" data-aos="fade-up" data-aos-delay="500">Optimisez vos ventes</h3>
+            <div class="d-inline-flex k_animate">
+                <a class="app_entry" data-aos="fade-up" data-aos-delay="500" href="">
+                    <img src="{{ asset('assets/images/apps_icons/crm.png') }}" alt="" class="deep-1 p-2 inline">
+                    <b class="text-body inline">CRM</b>
+                </a>
+                <a class="app_entry" data-aos="fade-up" data-aos-delay="500" href="">
+                    <img src="{{ asset('assets/images/apps_icons/pos.png') }}" alt="" class="deep-1 p-2 inline">
+                    <b class="text-body inline">Point de Vente</b>
+                </a>
+                <a class="app_entry" data-aos="fade-up" data-aos-delay="500" href="">
+                    <img src="{{ asset('assets/images/apps_icons/sales.png') }}" alt="" class="deep-1 p-2 inline">
+                    <b class="text-body inline">Ventes</b>
+                </a>
+            </div>
         </div>
-      </div>
-      <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="100">
-        <div class="unit-4 d-flex">
-          <div class="unit-4-icon mr-4">
-            {{-- <span class="feather-package"></span> --}}
-            <img width="50px" height="50px" src="{{ asset('assets/images/apps/inventory.png') }}" alt="">
-          </div>
-          <div>
-            <h3><strong>Inventaire</strong></h3>
-            <p>
-                Simplifiez la gestion de votre inventaire. Gardez une traçabilité optimale de vos stocks, suivez vos entrées et sorties de marchandises en toute simplicité.
-                Prenez des décisions éclairées pour votre entreprise.
-            </p>
-            <p><a href="#">En savoir +</a></p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="200">
-        <div class="unit-4 d-flex">
-          <div class="unit-4-icon mr-4">
-            {{-- <span class="feather-users"></span> --}}
-            <img width="50px" height="50px" src="{{ asset('assets/images/apps/crm.png') }}" alt="">
-          </div>
-          <div>
-            <h3><strong>CRM</strong></h3>
-            <p>
-                Soyez toujours connecté à vos clients et fournisseurs. Simplifiez la communication, suivez les interactions importantes, gérez les données clés et fidélisez vos partenaires commerciaux. Simplifiez votre entreprise et offrez une expérience client exceptionnelle avec notre application de gestion dédiée !
-            </p>
-            <p><a href="#">En savoir +</a></p>
-          </div>
-        </div>
-      </div>
 
 
-      <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="300">
-        <div class="unit-4 d-flex">
-          <div class="unit-4-icon mr-4">
-            {{-- <span class="feather-pie-chart"></span> --}}
-            <img width="50px" height="50px" src="{{ asset('assets/images/apps/finance.png') }}" alt="">
-          </div>
-          <div>
-            <h3><strong>Finance & Factures</strong></h3>
-            <p>
-                Optimisez vos finances et gérez vos factures en toute simplicité. Suivez vos revenus et dépenses, gérez les factures entrantes et sortantes, et gardez une vue d'ensemble de votre santé financière. Gagnez du temps et de restez organisé, tout en vous assurant que votre gestion financière est en ordre.
-            </p>
-            <p><a href="#">En savoir +</a></p>
-          </div>
+        <div class="col col-lg-4 d-flex flex-column align-items-center apps-list px-3">
+            <h3 class="app_list_col_title" data-aos="fade-up" data-aos-delay="500">Adaptez vos services</h3>
+            <div class="d-inline-flex k_animate">
+                <a class="app_entry" data-aos="fade-up" data-aos-delay="500" href="">
+                    <img src="{{ asset('assets/images/apps_icons/service.png') }}" alt="" class="deep-1 p-2 inline">
+                    <b class="text-body inline">Service</b>
+                </a>
+                <a class="app_entry" data-aos="fade-up" data-aos-delay="500" href="">
+                    <img src="{{ asset('assets/images/apps_icons/helpdesk.png') }}" alt="" class="deep-1 p-2 inline">
+                    <b class="text-body inline">Assistance</b>
+                </a>
+            </div>
         </div>
-      </div>
-      <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="400">
-        <div class="unit-4 d-flex">
-          <div class="unit-4-icon mr-4">
-            {{-- <span class="feather-shopping-bag"></span> --}}
-            <img width="50px" height="50px" src="{{ asset('assets/images/apps/pos.png') }}" alt="">
-          </div>
-          <div>
-            <h3><strong>Point de Vente</strong></h3>
-            <p>
-                Gérez vos transactions en toute fluidité, suivez vos ventes en temps réel et gérez votre inventaire avec facilité. Encaissez les paiements rapidement, émettez des factures et suivez vos stocks en temps réel. Optimisez votre processus de vente pour une expérience client exceptionnelle.
-            </p>
-            <p><a href="#">En savoir +</a></p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="500">
-        <div class="unit-4 d-flex">
-          <div class="unit-4-icon mr-4">
-            {{-- <span class="feather-users"></span> --}}
-            <img width="50px" height="50px" src="{{ asset('assets/images/apps/hr.png') }}" alt="">
-          </div>
-          <div>
-            <h3><strong>Ressources Humaines</strong></h3>
-            <p>
-                Simplifiez vos processus de gestion d'employer, de suivi des performances, et de gestion des congés et absences.
-              {{-- Cette application facilite la gestion des employés avec des fonctionnalités pour la paie, la gestion des absences, et bien plus encore. --}}
-            </p>
-            <p><a href="#">En savoir +</a></p>
-          </div>
-        </div>
-      </div>
 
+
+        <div class="col col-lg-4 d-flex flex-column align-items-center apps-list px-3">
+            <h3 class="app_list_col_title" data-aos="fade-up" data-aos-delay="500">Simplifiez vos opérations</h3>
+            <div class="d-inline-flex k_animate">
+                <a class="app_entry" data-aos="fade-up" data-aos-delay="500" href="">
+                    <img src="{{ asset('assets/images/apps_icons/inventory.png') }}" alt="" class="deep-1 p-2 inline">
+                    <b class="text-body inline">Inventaire</b>
+                </a>
+                <a class="app_entry" data-aos="fade-up" data-aos-delay="500" href="">
+                    <img src="{{ asset('assets/images/apps_icons/mrp.png') }}" alt="" class="deep-1 p-2 inline">
+                    <b class="text-body inline">MRP</b>
+                </a>
+                <a class="app_entry" data-aos="fade-up" data-aos-delay="500" href="">
+                    <img src="{{ asset('assets/images/apps_icons/purchase.png') }}" alt="" class="deep-1 p-2 inline">
+                    <b class="text-body inline">Achats</b>
+                </a>
+            </div>
+        </div>
+
+
+        <div class="col col-lg-4 d-flex flex-column align-items-center apps-list px-3">
+            <h3 class="app_list_col_title" data-aos="fade-up" data-aos-delay="500">Gérez vos finances</h3>
+            <div class="d-inline-flex k_animate">
+                <a class="app_entry" data-aos="fade-up" data-aos-delay="500" href="">
+                    <img src="{{ asset('assets/images/apps_icons/invoice.png') }}" alt="" class="deep-1 p-2 inline">
+                    <b class="text-body inline">Factures</b>
+                </a>
+                <a class="app_entry" data-aos="fade-up" data-aos-delay="500" href="">
+                    <img src="{{ asset('assets/images/apps_icons/accounting.png') }}" alt="" class="deep-1 p-2 inline">
+                    <b class="text-body inline">Finances</b>
+                </a>
+            </div>
+        </div>
+
+
+        <div class="col col-lg-4 d-flex flex-column align-items-center apps-list px-3">
+            <h3 class="app_list_col_title" data-aos="fade-up" data-aos-delay="500">Créez de magnifiques sites web</h3>
+            <div class="d-inline-flex k_animate">
+                <a class="app_entry" data-aos="fade-up" data-aos-delay="500" href="">
+                    <img src="{{ asset('assets/images/apps_icons/website.png') }}" alt="" class="deep-1 p-2 inline">
+                    <b class="text-body inline">Site web</b>
+                </a>
+                <a class="app_entry" data-aos="fade-up" data-aos-delay="500" href="">
+                    <img src="{{ asset('assets/images/apps_icons/ecom.png') }}" alt="" class="deep-1 p-2 inline">
+                    <b class="text-body inline">eCommerce</b>
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="col-12 text-center"  data-aos="fade-up" data-aos-delay="500">
+        <button class="btn btn-dark" href="">
+            Et bien plus
+        </button>
     </div>
   </div>
 </div>

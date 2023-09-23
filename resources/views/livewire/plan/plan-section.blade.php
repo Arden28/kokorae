@@ -8,7 +8,7 @@
           <div class="d-inline-flex align-items-center">
             <div class="period">Mensuel</div>
             <a href="#" class="period-toggle js-period-toggle"></a>
-            <div class="period"><span class="mr-2">Annuel</span><span class="save-percent">Epargnez 25%</span></div>
+            <div class="period"><span class="mr-2">Annuel</span><span class="save-percent">Epargnez 15%</span></div>
           </div>
 
         </div>
@@ -21,15 +21,15 @@
             <h3>Standard</h3>
             <div class="description">
               <p>
-                Cette formule convient aux petites entreprises qui ont des besoins de base en matière de gestion des activités commerciales
+                {{ __('Cette formule est idéale pour les petites entreprises ou entrepreneurs souhaitant une solution de gestion simple et efficace.') }}
               </p>
             </div>
             <div class="period-change mb-4 d-block">
               <div class="price-wrap">
                 <div class="price">
                   <div>
-                    <div>5000 FCFA</div>
-                    <div>42000 FCFA</div>
+                    <div>5.000 XAF</div>
+                    <div>42.000 XAF</div>
                   </div>
                 </div>
               </div>
@@ -37,39 +37,37 @@
                 <div class="d-inline-block mr-1">Par</div>
                 <div class="d-block text-left period">
                   <div>
-                    <div>Mois</div>
-                    <div>An</div>
+                    <div><b>Mois</b></div>
+                    <div><b>An</b></div>
                   </div>
                 </div>
               </div>
             </div>
             <ul class="list-unstyled mb-4">
-              <li class="d-flex"><span class="feather-check-square mr-2 mt-1"></span><span>Gestion de Ventes</span></li>
-              <li class="d-flex"><span class="feather-check-square mr-2 mt-1"></span><span>Gestion Inventaire</span></li>
-              <li class="d-flex"><span class="feather-check-square mr-2 mt-1"></span><span>Gestion Point de Ventes</span></li>
-              <li class="d-flex"><span class="feather-check-square mr-2 mt-1"></span><span>Statistiques de base</span></li>
-              <li class="d-flex"><span class="feather-check-square mr-2 mt-1"></span><span>Support Client(SMS, Email, Whatsapp)</span></li>
+              <li class="d-flex"><span class="feather-check-square mr-2 mt-1"></span><span>Pour une seule <strong>application</strong>, utilisateurs illimités</span></li>
+              <hr>
+              <li class="d-flex"><span class="feather-check-square mr-2 mt-1"></span><span><strong>Koverae Cloud</strong> <i class="bi bi-cloud"></i></span></li>
             </ul>
             <div>
-              <a target="__blank" href="https://dashboard.koverae.com/auth/register?nav_from=pricing_plan" class="btn btn-primary">Commencer</a>
+              <a target="__blank" href="https://koverae.com/auth/register?nav_from=pricing_plan&choice=standard" class="btn btn-primary col-12">Commencer</a>
             </div>
           </div>
         </div>
 
         <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
           <div class="pricing-item active">
-            <h3>Medium</h3>
+            <h3>Spark</h3>
             <div class="description">
               <p>
-                Cette formule est conçue pour les entreprises en croissance qui ont besoin de fonctionnalités plus avancées pour gérer leurs activités commerciales.
+                {{ __('Idéale pour les entreprises en plein essor qui exigent des fonctionnalités plus adaptées pour leur développement.') }}
               </p>
             </div>
             <div class="period-change mb-4 d-block">
               <div class="price-wrap">
                 <div class="price">
                   <div>
-                    <div>15000 FCFA</div>
-                    <div>156000 FCFA</div>
+                    <div>25.550 XAF</div>
+                    <div>260.690 XAF</div>
                   </div>
                 </div>
               </div>
@@ -77,22 +75,19 @@
                 <div class="d-inline-block mr-1">Par</div>
                 <div class="d-block text-left period">
                   <div>
-                    <div>Mois</div>
-                    <div>An</div>
+                    <div><b>Mois</b></div>
+                    <div><b>An</b></div>
                   </div>
                 </div>
               </div>
             </div>
             <ul class="list-unstyled mb-4">
-              <li class="d-flex"><span class="feather-check-square mr-2 mt-1"></span><span>Formule Standard</span></li>
+              <li class="d-flex"><span class="feather-check-square mr-2 mt-1"></span><span>Toutes les <strong>applications</strong></span></li>
               <hr>
-              <li class="d-flex"><span class="feather-check-square mr-2 mt-1"></span><span>Gestion de Ressources Humaines</span></li>
-              <li class="d-flex"><span class="feather-check-square mr-2 mt-1"></span><span>Gestion de Caisse</span></li>
-              <li class="d-flex"><span class="feather-check-square mr-2 mt-1"></span><span>Plus de 5 Points de Ventes</span></li>
-              <li class="d-flex"><span class="feather-check-square mr-2 mt-1"></span><span>Support Client en présentiel</span></li>
+              <li class="d-flex"><span class="feather-check-square mr-2 mt-1"></span><span><strong>Koverae Cloud</strong> <i class="bi bi-cloud"></i></span></li>
             </ul>
             <div>
-              <a target="__blank" href="https://dashboard.koverae.com/auth/register?nav_from=pricing_plan" class="btn btn-primary">Commencer</a>
+              <a target="__blank" href="https://dashboard.koverae.com/auth/register?nav_from=pricing_plan" class="btn btn-primary col-12">Commencer</a>
             </div>
           </div>
         </div>
@@ -102,15 +97,15 @@
             <h3>Enterprise</h3>
             <div class="description">
               <p>
-                Cette formule est destinée aux grandes entreprises qui ont des besoins complexes en matière de gestion des activités commerciales
+                {{ __('Adaptée pour les entreprises de grande envergure aux besoins spécifiques ou complexes.') }}
               </p>
             </div>
             <div class="period-change mb-4 d-block">
               <div class="price-wrap">
                 <div class="price">
                   <div>
-                    <div>45000 FCFA</div>
-                    <div>504000 FCFA</div>
+                    <div>64.050 XAF</div>
+                    <div>653.390 XAF</div>
                   </div>
                 </div>
               </div>
@@ -118,24 +113,25 @@
                 <div class="d-inline-block mr-1">Par</div>
                 <div class="d-block text-left period">
                   <div>
-                    <div>Mois</div>
-                    <div>An</div>
+                    <div><b>Mois</b></div>
+                    <div><b>An</b></div>
                   </div>
                 </div>
               </div>
             </div>
             <ul class="list-unstyled mb-4">
-              <li class="d-flex"><span class="feather-check-square mr-2 mt-1"></span><span>Formule Medium</span></li>
-              <hr>
-              <li class="d-flex"><span class="feather-check-square mr-2 mt-1"></span><span>Plus de 10 Points de Ventes</span></li>
-              <li class="d-flex"><span class="feather-check-square mr-2 mt-1"></span><span>Personnaliser les tableaux de bord</span></li>
-              <li class="d-flex"><span class="feather-check-square mr-2 mt-1"></span><span>Rapports journaliers par emails, SMS, Whatsapp</span></li>
+                <li class="d-flex"><span class="feather-check-square mr-2 mt-1"></span><span>Toutes les <strong>applications</strong></span></li>
+                <hr>
+                <li class="d-flex"><span class="feather-check-square mr-2 mt-1"></span><span><strong>Koverae Cloud</strong> <i class="bi bi-cloud"></i></span></li>
+                <hr>
+                <li class="d-flex"><span class="feather-check-square mr-2 mt-1"></span><span>Pluri-<strong>entreprises</strong> <i class="bi bi-building"></i></span></li>
             </ul>
             <div>
-              <a target="__blank" href="https://dashboard.koverae.com/auth/register?nav_from=pricing_plan" class="btn btn-primary">Commencer</a>
+              <a target="__blank" href="https://dashboard.koverae.com/auth/register?nav_from=pricing_plan" class="btn btn-primary col-12">Commencer</a>
             </div>
           </div>
         </div>
+
       </div>
     </div>
 </div>
