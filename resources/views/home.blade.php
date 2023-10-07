@@ -5,7 +5,7 @@
 
 @section('content')
 
-<div class="hero-slant overlay" id="hero" data-stellar-background-ratio="0.5" style=" background-image: url('{{asset('assets/images/hero-min.jpg')}}')">
+<div class="hero-ban overlay" id="hero" data-stellar-background-ratio="0.5" style=" background-image: url('{{asset('assets/images/hero-min.jpg')}}')">
 
   <div class="container">
     <div class="row align-items-center justify-content-between">

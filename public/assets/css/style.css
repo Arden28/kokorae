@@ -214,18 +214,25 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
           color: #000000; }
       .site-nav .site-navigation .site-menu > li.cta-button a {
         font-size: 12px;
-        /* font-weight: 500; */
+        font-weight: 500;
         padding: 6px 20px;
         border: 1px solid transparent;
         color: #ffffff;
         background: #1e1e1e;
         border-radius: 4px; }
+        /* Sign-in */
+        .site-nav .site-navigation .site-menu > li#sign-in a {
+            background-color: transparent;
+            color: #fff;
+            font-weight: 700;
+        }
         .site-nav .site-navigation .site-menu > li.cta-button a:hover {
           color: #ffffff;
           background-color: transparent;
           border-color: rgba(255, 255, 255, 0.3); }
       .site-nav .site-navigation .site-menu > li.active > a {
-        color: #ffffff; }
+        color: #ffffff;
+    }
     .site-nav .site-navigation .site-menu .has-children {
       position: relative; }
       .site-nav .site-navigation .site-menu .has-children > a {
@@ -354,9 +361,26 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
     margin-right: 8px;
 }
 
+.site-nav.sticky .site-navigation .site-menu > li#sign-in a {
+    background-color: transparent;
+    color: #000;
+    font-weight: 700;
+}
+.site-nav.sticky .site-navigation .site-menu > li#trial-link a {
+    font-size: 12px;
+    line-height: 13px;
+    color: #fff;
+    font-weight: 700;
+    margin-right: 15px;
+}
+.site-nav.sticky .site-navigation .site-menu > li#trial-link a:hover{
+    background: #1e1e1e;
+}
+
 .site-nav .site-navigation .site-menu > li.cta-button a:hover {
   color: #040404;
-  background: #ebebeb;
+  background-color: transparent;
+  border-color: rgba(255, 255, 255, 0.3);
 }
 
 
@@ -1634,8 +1658,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
     /* Hero Banner */
 
 .hero-ban {
-    background: rgb(0,44,173);
-    background: linear-gradient(290deg, rgba(0,44,173,1) 0%, rgba(104,220,227,1) 40%);
+    background: linear-gradient(290deg, rgb(49, 82, 182) 0%, rgba(104,220,227,1) 40%);
     position: relative;
 
   }
@@ -1652,7 +1675,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
     .hero-ban .container {
       position: relative; }
     .hero-ban, .hero-ban > .container > .row {
-      height: 65vh;
+      height: 100vh;
     }
     .hero-ban .intro {
       position: relative;

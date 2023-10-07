@@ -68,7 +68,7 @@
 
 
       <nav class="site-nav">
-        <div class="logo">
+        <div class="logo float-start">
             <a href="{{ route('home') }}" class="text-white">
                 <img src="{{ asset('assets/images/logo/logo-1.png')}}" alt="Koverae Logo">
             </a>
@@ -86,8 +86,8 @@
             </ul>
 
             <ul class="js-clone-nav d-none d-lg-inline-block text-left site-menu float-right menu-absolute">
-                <li class="cta-button"><a href="https://dashboard.koverae.com/auth/login?from=nav_link&&uip=" target="_blank">Se connecter</a></li>
-              <li class="cta-button"><a href="{{ route('demo') }}">Réserver une démo</a></li>
+                <li class="cta-button" id="sign-in"><a href="https://dashboard.koverae.com/auth/login?from=nav_link&&uip=" target="_blank">Se connecter</a></li>
+              <li class="cta-button" id="trial-link"><a href="{{ route('demo') }}">Réserver une démo</a></li>
             </ul>
 
             <a href="#" class="burger light ml-auto site-menu-toggle js-menu-toggle d-block d-lg-none" data-toggle="collapse" data-target="#main-navbar">
