@@ -51,7 +51,12 @@
         src="https://www.facebook.com/tr?id=291287213552434&ev=PageView&noscript=1" />
     </noscript>
     <!-- End Meta Pixel Code -->
-
+    <style>
+        .dropdown-item:focus{
+            background-color: #026469;
+            color: #ffffff;
+        }
+    </style>
 </head>
 <body>
 
@@ -76,17 +81,52 @@
         </div>
         <div class="row align-items-center">
 
-
           <div class="col-12 col-sm-12 col-lg-12 site-navigation text-center">
             <ul class="js-clone-nav d-none d-lg-inline-block text-left site-menu">
-              <li class="active"><a href="{{ route('home') }}">Acceuil</a></li>
-              <li><a href="{{ route('home') }}#features">Fonctionnalités</a></li>
-              <li><a href="{{ route('home') }}#pricing">Nos prix</a></li>
-              <li><a href="{{ route('blogs.index') }}">Blog</a></li>
+                <li class="has-children" id="k-menu">
+                  <a href="#">Industries</a>
+                  <ul class="dropdown start">
+                    <li><a href="portfolio.html">Commerce de détails</a></li>
+                    <li><a href="single.html">Restauration & Hôtellerie</a></li>
+                    <li><a href="portfolio.html">Grande distribution</a></li>
+                  </ul>
+                </li>
+              <li><a href="{{ route('pricing') }}">Tarification</a></li>
+              <li class="has-children">
+                <a href="#">Entreprise</a>
+                <ul class="dropdown">
+                  <li><a href="{{ route('about') }}">A propos de nous</a></li>
+                  {{-- <li><a href="{{ route('blogs.index') }}">Notre blog</a></li> --}}
+                  <li><a href="{{ route('jobs.index') }}">Carrières</a></li>
+                </ul>
+              </li>
             </ul>
 
-            <ul class="js-clone-nav d-none d-lg-inline-block text-left site-menu float-right menu-absolute">
-                <li class="cta-button" id="sign-in"><a href="https://dashboard.koverae.com/auth/login?from=nav_link&&uip=" target="_blank">Se connecter</a></li>
+            <ul class="js-clone-nav d-none d-lg-inline-block text-left site-menu float-right">
+                @auth
+                <li class="has-children">
+                  <a href="#">{{ str()->limit(Auth::user()->name, 15) }}</a>
+                  <ul class="dropdown">
+                    <li class="dropdown-item"><a href="{{ route('kovers.home') }}">Mon compte</a></li>
+                    <li class="dropdown-item"><a href="{{ route('kovers.databases') }}">Mes entreprises</a></li>
+                    <hr class="dropdown-divider">
+
+                    <!-- Authentication -->
+                    <form method="POST" action="{{ route('logout') }}">
+                        @csrf
+
+                        <x-dropdown-link class="dropdown-item" :href="route('logout')"
+                                onclick="event.preventDefault();
+                                            this.closest('form').submit();">
+                            {{ __('Me déconnecter') }}
+                        </x-dropdown-link>
+                    </form>
+                    {{-- <li><a class="dropdown-item" href="{{ route('jobs.index') }}">Me déconnecter</a></li> --}}
+                  </ul>
+                </li>
+                @else
+                <li class="cta-button" id="sign-in"><a href="{{ route('login') }}">Se connecter</a></li>
+                @endauth
               <li class="cta-button" id="trial-link"><a href="{{ route('demo') }}">Réserver une démo</a></li>
             </ul>
 
@@ -105,55 +145,54 @@
     @yield('content')
 
 
-    <div class="site-footer">
+    <div class="site-footer mt-4 border-top mt-8">
         <div class="container">
           <div class="row justify-content-between">
             <div class="col-lg-4">
               <div class="widget">
                 <h3>A propos</h3>
-                <p>
-                  Notre mission chez <strong>Koverae</strong> est de soutenir les commerçants en leur offrant des outils performants pour améliorer leur expérience client.
+                <p class="text-black">
+                  <strong>Koverae</strong> est une solution SaaS pour une gestion d'entreprise simplifiée. Transformez votre façon d'opérer avec nos outils intuitifs et intégrés, spécialement conçus pour les <strong>PMEs</strong>.
                 </p>
               </div>
               <div class="widget">
                 <h3>Connectez-vous à nous</h3>
                 <ul class="social list-unstyled">
                   <li><a href="https://www.facebook.com/koverae" target="_blank"><span class="icon-facebook"></span></a></li>
-                  <li><a href="https://twitter.com/koverae_cg" target="_blank"><span class="icon-twitter"></span></a></li>
                   <li><a href="https://www.instagram.com/koverae_/" target="_blank"><span class="icon-instagram"></span></a></li>
                   <li><a href="https://www.linkedin.com/company/koverae/" target="_blank"><span class="icon-linkedin"></span></a></li>
+                  <li><a href="https://github.com/Koverae" target="_blank"><span class="icon-github"></span></a></li>
+                  <li><a href="tel:+242065996406"><span class="icon-phone"></span></a></li>
+                  <li><a href="mailto:info@koverae.com"><span class="icon-envelope"></span></a></li>
                 </ul>
               </div>
             </div>
             <div class="col-lg-6">
               <div class="row">
-                <div class="col-12">
+                <div class="col-6 col-sm-6 col-md-4">
                   <div class="widget">
-                    <h3>Navigations</h3>
+                    <h3>Kovers</h3>
+                    <ul class="links list-unstyled">
+                      <li><a href="#">Support Clients</a></li>
+                    </ul>
                   </div>
                 </div>
                 <div class="col-6 col-sm-6 col-md-4">
                   <div class="widget">
+                    <h3>Services</h3>
                     <ul class="links list-unstyled">
-                      <li><a href="#">Acceuil</a></li>
+                      <li><a href="#">Intégrations</a></li>
+                      <li><a href="#">Formations</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-6 col-md-4">
+                  <div class="widget">
+                    <h3>Entreprise</h3>
+                    <ul class="links list-unstyled">
                       <li><a href="{{ route('about') }}">A propos de nous</a></li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="col-6 col-sm-6 col-md-4">
-                  <div class="widget">
-                    <ul class="links list-unstyled">
-                      <li><a href="#">Contact</a></li>
-                      <li><a href="#">Support Client</a></li>
-                      <li><a href="#">Confidentialité</a></li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="col-6 col-sm-6 col-md-4">
-                  <div class="widget">
-                    <ul class="links list-unstyled">
-                      <li><a href="#">FAQ</a></li>
-                      <li><a href="#">Carrières</a></li>
+                      <li><a href="{{ route('jobs.index') }}">Carrières</a></li>
+                      <li><a href="#">Documentation</a></li>
                     </ul>
                   </div>
                 </div>
@@ -161,9 +200,10 @@
             </div>
           </div>
 
-          <div class="row justify-content-center text-center copyright">
+          <div class="row justify-content-center text-center text-black copyright">
             <div class="col-md-8">
-              <p>Copyright &copy;<script>document.write(new Date().getFullAn());</script>. Tous droits Réservés | <strong>Koverae</strong>
+              <p>Site Web réalisé avec <strong>Koverae</strong></p>
+              {{-- <p>Copyright &copy;<script>document.write(new Date().getFullAn());</script>. Tous droits Réservés | <strong>Koverae</strong> --}}
               </p>
             </div>
           </div>

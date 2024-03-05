@@ -3,6 +3,7 @@
 <script src="{{ asset('assets/js/jquery-migrate-3.0.0.min.js')}}"></script>
 <script src="{{ asset('assets/js/popper.min.js')}}"></script>
 <script src="{{ asset('assets/js/bootstrap.min.js')}}"></script>
+{{-- <script src="{{ asset('assets/js/bootstrap.bundle.js')}}"></script> --}}
 <script src="{{ asset('assets/js/owl.carousel.min.js')}}"></script>
 <script src="{{ asset('assets/js/aos.js')}}"></script>
 <script src="{{ asset('assets/js/imagesloaded.pkgd.js')}}"></script>

@@ -101,7 +101,7 @@
     </a>
     <div class="links">
       <div class="link-item">
-        <a href="#">Home</a>
+        <a href="#">Dashboard</a>
       </div>
       <div class="link-item">
         <a href="#">Menu</a>

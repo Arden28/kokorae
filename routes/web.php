@@ -2,6 +2,9 @@
 
 use App\Http\Controllers\DemoController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\JobController;
+use App\Http\Controllers\Kover\DatabaseController;
+use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,17 +18,22 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Route::get('/welcome', function () {
-//     return view('welcome');
+// Route::get('/home', function () {
+//     return redirect()->route('home');
 // });
 
-Route::get('/home', [HomeController::class, 'home'])->name('home');
 
-Route::get('/', [HomeController::class, 'home']);
+// Route::get('/', [HomeController::class, 'home'])->name('home');
+
+// Pricing
+Route::get('/pricing', [HomeController::class, 'pricing'])->name('pricing');
+
+Route::get('/', [HomeController::class, 'home'])->name('home');
 
 Route::get('/trial', [DemoController::class, 'demo'])->name('demo');
 
 Route::get('/about', [HomeController::class, 'about'])->name('about');
+Route::get('/jobs', [JobController::class, 'index'])->name('jobs.index');
 
 // Blog routes
 Route::get('/blog', [HomeController::class, 'blog'])->name('blogs.index');
@@ -33,3 +41,21 @@ Route::get('/blog/{slug}', [HomeController::class, 'single'])->name('blogs.show'
 
 
 Route::get('/kokoma', [HomeController::class, 'typo']);
+
+Route::get('/dashboard', function () {
+    return view('dashboard');
+})->middleware(['auth', 'verified'])->name('dashboard');
+
+Route::middleware('auth')->group(function () {
+    Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
+    Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
+    Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+});
+
+// Kover Account
+Route::middleware('auth')->prefix('my-kover')->group(function () {
+    Route::get('/databases', [DatabaseController::class, 'index'])->name('kovers.databases');
+    Route::get('/home', [ProfileController::class, 'index'])->name('kovers.home');
+});
+
+require __DIR__.'/auth.php';

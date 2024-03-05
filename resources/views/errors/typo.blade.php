@@ -39,7 +39,7 @@
                         Koverae est une solution complète pour les entreprises, offrant une suite d'applications intégrées conçues pour automatiser et optimiser les processus commerciaux.
                         Koverae simplifie les opérations et favorise une meilleure efficacité à travers une plateforme unifiée.
                     </p>
-                    <a href="https://www.koverae.com" target="_blank" class="btn btn-primary me-2"><b>Notre Site Web</b></a>
+                    <a href="https://www.koverae.com" target="_blank" class="btn btn-primary me-2"><b>Notre site web</b></a>
                     </div>
                 </div>
             </div>
