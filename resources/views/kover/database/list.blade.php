@@ -23,32 +23,32 @@
             <h5 class="mt-2 font-weight-bold">
                 Entrerpises
             </h5>
-            <a href="#" class="btn primary font-weight-bold">
-                Créer
+            <a href="{{ route('demo') }}" class="btn primary font-weight-bold">
+                Ajouter une entreprise
             </a>
         </div>
         <table class="table table-responsive" style="background-color: rgb(240, 235, 235);">
             <thead>
               <tr>
                 <th scope="col">Entreprise</th>
-                <th scope="col">Session ouverte sur 7 jours</th>
                 <th scope="col">Session ouverte depuis plus de 7 jours</th>
                 <th scope="col">Rapport fiscal</th>
                 <th scope="col"></th>
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <th scope="row">Banéo</th>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-                <td>
-                    <a href="" class="btn primary font-weight-bold">
-                        Se Connecter
-                    </a>
-                </td>
-              </tr>
+                @foreach ($companies as $company)
+                <tr>
+                  <th scope="row">{{ $company->name }}</th>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>
+                      <a href="http://{{ $company->domain_name }}/web" class="btn primary font-weight-bold">
+                          Se Connecter
+                      </a>
+                  </td>
+                </tr>
+                @endforeach
             </tbody>
           </table>
     </div>

@@ -2,6 +2,15 @@
 
 @section('page_title', 'Démo Koverae Cloud')
 
+@section('styles')
+    <style>
+        .subscription-widget .form-headline{
+            font-size: 32px;
+            font-weight: 600;
+            color: #026469;
+        }
+    </style>
+@endsection
 
 @section('content')
 <div class="row g-0 flex-fill site-section">
@@ -31,8 +40,8 @@
                   </li>
                   <li style="margin-top: 10px">
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon text-green" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l5 5l10 -10" /></svg>
-                    {{ __('Essaie sans frais pendant 15 jours, ') }} <br>
-                    {{ __('     facturation mensuelle ou annuelle à l\'issue de cette période') }}
+                    {{ __('Essai sans frais pendant 8 jours, ') }} <br>
+                    {{ __('facturation mensuelle ou annuelle à l\'issue de cette période') }}
                   </li>
                 </ul>
               </div>
@@ -42,15 +51,12 @@
 
     </div>
 
-  <div class="col-12 col-lg-6 col-xl-6 border-top-wide border-primary d-flex flex-column justify-content-center">
-    <div class="container container-tight my-5 px-lg-5">
-      <div class="text-center mb-4">
-            <a href="#" class="navbar-brand navbar-brand-autodark"><img src="{{ asset('assets/images/logo/logo-1.png') }}" height="45px" alt="Koverae Logo"></a>
-        </div>
-        <h2 class="h3 text-center mb-3" style="font-size: 20px; line-height: 24px;">
-            {{ __("Réservez une démo personnalisée pour votre entreprise") }}
+  <div class="col-12 col-lg-6 col-xl-6 border-top-wide border-primary d-flex">
+    <div class="container subscription-widget container-tight my-5 px-lg-5">
+        <h3 class="form-headline mt0 mb-3">
+            Koverae | Commencez
             <br />
-        </h2>
+        </h3>
 
         <livewire:trial.form />
 

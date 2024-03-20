@@ -35,4 +35,8 @@ $(document).ready(function() {
 });
 
 </script>
+
+<!-- Stripe JS -->
 @livewireScripts
+
+@yield('scripts')

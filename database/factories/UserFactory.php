@@ -23,6 +23,10 @@ class UserFactory extends Factory
             'phone_verified_at' => $this->faker->dateTime(),
             'email' => $this->faker->unique()->safeEmail,
             'email_verified_at' => $this->faker->dateTime(),
+            'street' => $this->faker->streetAddress(),
+            'city' => $this->faker->city,
+            'zip' => $this->faker->postcode(),
+            'country' => $this->faker->country(),
             'password' => bcrypt('password'), // Use bcrypt to hash the placeholder password
             'unique_id' => Str::uuid(), // Generate a unique UUID
             'user_type' => $this->faker->randomElement(['developer', 'business_partner', 'kover', 'kover_member', 'user']),

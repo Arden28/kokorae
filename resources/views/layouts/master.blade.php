@@ -56,6 +56,23 @@
             background-color: #026469;
             color: #ffffff;
         }
+        #cart-icon{
+            font-size: 16px;
+            font-weight: bolder;
+        }
+            #lblCartCount {
+                padding-left: 9px;
+                padding-right: 9px;
+                -webkit-border-radius: 9px;
+                -moz-border-radius: 9px;
+                border-radius: 9px;
+                font-size: 12px;
+                background: #026469;
+                color: #fff;
+                padding: 0 5px;
+                vertical-align: top;
+                margin-left: -10px;
+            }
     </style>
 </head>
 <body>
@@ -86,9 +103,9 @@
                 <li class="has-children" id="k-menu">
                   <a href="#">Industries</a>
                   <ul class="dropdown start">
-                    <li><a href="portfolio.html">Commerce de détails</a></li>
-                    <li><a href="single.html">Restauration & Hôtellerie</a></li>
-                    <li><a href="portfolio.html">Grande distribution</a></li>
+                    <li><a href="#">Commerce de détails</a></li>
+                    <li><a href="#">Restauration & Hôtellerie</a></li>
+                    <li><a href="#">Grande distribution</a></li>
                   </ul>
                 </li>
               <li><a href="{{ route('pricing') }}">Tarification</a></li>
@@ -103,6 +120,18 @@
             </ul>
 
             <ul class="js-clone-nav d-none d-lg-inline-block text-left site-menu float-right">
+
+                @php
+                    $cart = \Gloudemans\Shoppingcart\Facades\Cart::instance('plan');
+                @endphp
+                @if($cart->content()->isNotEmpty())
+                <li>
+                    <a href="{{ route('cart') }}" class="text-decoration-none">
+                        <i class="bi bi-cart" id="cart-icon"></i>
+                        <span class="badge badge-primary" id="lblCartCount">{{ $cart->count() }}</span>
+                    </a>
+                </li>
+                @endif
                 @auth
                 <li class="has-children">
                   <a href="#">{{ str()->limit(Auth::user()->name, 15) }}</a>

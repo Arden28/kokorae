@@ -8,6 +8,13 @@ use Illuminate\Support\Str;
 
 class PlanSection extends Component
 {
+    public $period = 'Annuel'; // Default state
+
+    public function togglePeriod()
+    {
+        $this->period = $this->period === 'Annuel' ? 'Mensuel' : 'Annuel';
+    }
+    
     public function render()
     {
 
