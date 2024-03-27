@@ -26,8 +26,8 @@ return new class extends Migration
             $table->string('city')->nullable();
             $table->string('zip')->nullable();
             $table->string('country')->nullable();
-            $table->string('password');
-            $table->string('unique_id')->unique(); //
+            $table->string('password')->nullable();
+            $table->string('unique_id')->unique()->nullable(); //
             $table->enum('user_type',['developer', 'business_partner', 'kover', 'kover_member', 'user'])->default('kover');
             $table->boolean('is_active')->default(true);
             $table->string('access_level')->nullable(); //Differentiates between various access permissions or roles.

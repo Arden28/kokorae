@@ -21,6 +21,8 @@ return new class extends Migration
             $table->string('website')->nullable();
             $table->integer('tax_report')->default((0));
             $table->string('logo')->nullable();
+            $table->boolean('is_trial_mode')->default(true);
+            $table->dateTime('trial_ends_at')->nullable();
             $table->timestamps();
         });
     }

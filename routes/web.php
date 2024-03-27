@@ -33,8 +33,11 @@ Route::get('/', [HomeController::class, 'home'])->name('home');
 
 Route::get('/trial', [DemoController::class, 'demo'])->name('demo');
 
-Route::get('/shop/cart', [CartController::class, 'index'])->name('cart');
-Route::post('/shop/cart/add', [CartController::class, 'addToCart'])->name('cart.add');
+Route::middleware('auth')->prefix('my-kover')->group(function () {
+    Route::get('/shop/cart', [CartController::class, 'index'])->name('cart');
+    Route::post('/shop/cart/add', [CartController::class, 'addToCart'])->name('cart.add');
+});
+
 Route::middleware(['auth', 'cart'])->group(function () {
     Route::get('/shop/cart/delete', [CartController::class, 'deleteCart'])->name('cart.destroy');
     Route::get('/shop/checkout', [CartController::class, 'ship'])->name('cart.ship');

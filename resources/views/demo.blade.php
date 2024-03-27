@@ -5,9 +5,14 @@
 @section('styles')
     <style>
         .subscription-widget .form-headline{
-            font-size: 32px;
+            font-family: "Caveat", Helvetica;
+            font-size: 52px;
             font-weight: 600;
             color: #026469;
+            width: 100%;
+        }
+        .subscription-widget .form-headline span{
+            font-size: 32px;
         }
     </style>
 @endsection
@@ -28,7 +33,7 @@
                 <ul style="list-style: none">
                   <li>
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon text-green" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l5 5l10 -10" /></svg>
-                    {{ __('Basé dans le cloud, aucune installation requise') }}
+                    Basé dans le <strong>cloud</strong>, aucune installation requise
                   </li>
                   <li style="margin-top: 10px">
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon text-green" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l5 5l10 -10" /></svg>
@@ -40,7 +45,7 @@
                   </li>
                   <li style="margin-top: 10px">
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon text-green" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l5 5l10 -10" /></svg>
-                    {{ __('Essai sans frais pendant 8 jours, ') }} <br>
+                    <strong>Essai sans frais pendant 8 jours</strong>, <br>
                     {{ __('facturation mensuelle ou annuelle à l\'issue de cette période') }}
                   </li>
                 </ul>
@@ -51,17 +56,9 @@
 
     </div>
 
-  <div class="col-12 col-lg-6 col-xl-6 border-top-wide border-primary d-flex">
-    <div class="container subscription-widget container-tight my-5 px-lg-5">
-        <h3 class="form-headline mt0 mb-3">
-            Koverae | Commencez
-            <br />
-        </h3>
-
-        <livewire:trial.form />
-
-    </div>
-  </div>
+    <livewire:trial.app-selection />
+  {{-- <div class="col-12 col-lg-6 col-xl-6 border-top-wide border-primary d-flex">
+  </div> --}}
 
 </div>
 @endsection

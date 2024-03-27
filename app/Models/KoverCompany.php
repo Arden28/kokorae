@@ -8,7 +8,11 @@ use Illuminate\Database\Eloquent\Builder;
 
 class KoverCompany extends Model
 {
+
     use HasFactory;
+
+    // protected $connection = 'mysql';
+    // public $table = 'kover_companies';
 
     protected $guarded = [];
 

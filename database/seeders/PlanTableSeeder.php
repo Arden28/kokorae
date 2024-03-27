@@ -18,6 +18,7 @@ class PlanTableSeeder extends Seeder
     {
         // Standard Plan
         $monthlyPlan1 = Plan::create([
+            'id' => 1,
             'tag' => 'standard',
             'name' => 'Standard',
             'description' => 'Pour une seule app, avec des utilisateurs illimités',
@@ -39,6 +40,7 @@ class PlanTableSeeder extends Seeder
 
         // Spark Plan Monthly
         $monthlyPlan2 = Plan::create([
+            'id' => 2,
             'tag' => 'spark_monthly',
             'name' => 'Plan Spark',
             'description' => 'Toutes les apps disponibles',
@@ -64,6 +66,7 @@ class PlanTableSeeder extends Seeder
 
         // Spark Plan Yearly
         $yearlyPlan2 = Plan::create([
+            'id' => 3,
             'tag' => 'spark_yearly',
             'name' => 'Plan Spark',
             'description' => 'Toutes les apps disponibles',
@@ -89,6 +92,7 @@ class PlanTableSeeder extends Seeder
 
         // Enterprise Plan Monthly
         $monthlyPlan3 = Plan::create([
+            'id' => 4,
             'tag' => 'enterprise_monthly',
             'name' => 'Plan Enterprise',
             'description' => "Toutes les apps disonibles et bien d'autres",
@@ -114,6 +118,7 @@ class PlanTableSeeder extends Seeder
 
         // Enterprise Plan Monthly
         $yearlyPlan3 = Plan::create([
+            'id' => 5,
             'tag' => 'enterprise_yearly',
             'name' => 'Plan Enterprise',
             'description' => "Toutes les apps disonibles et bien d'autres",

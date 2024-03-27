@@ -74,7 +74,7 @@
             <!-- Illustration -->
             <div class="intro col-lg-6 col-md-12 col-sm-12">
                 <!-- Vidéo illustrative -->
-                    <video src="{{ asset('assets/video/video_homepage.mp4') }}" muted autoplay loop class="homepage-video shadow"></video>
+                    <video src="#" muted autoplay loop class="homepage-video shadow"></video>
             </div>
 
         </div>

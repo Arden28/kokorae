@@ -104,7 +104,8 @@ class CartController extends Controller
     }
 
     public function addToCart(Request $request){
-        $plan = Plan::getByTag($request->slug);
+        $plan = Plan::where('tag', $request->slug)->first();
+        Log::info("Received slug: " . $request->slug);
 
         Cart::store($plan->id);
         $cart = Cart::instance('plan');
