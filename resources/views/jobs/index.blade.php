@@ -47,7 +47,7 @@
                             <a class="dropdown-item" href="#">{{ __('Administration') }}</a>
                             <a class="dropdown-item" href="#">{{ __('Ventes') }}</a>
                             <a class="dropdown-item" href="#">{{ __('Marketing') }}</a>
-                            <a class="dropdown-item" href="#">{{ __('Développement') }}</a>
+                            <a class="dropdown-item" href="#">{{ __('Recherche & Développement') }}</a>
                             <a class="dropdown-item" href="#">{{ __('Finance') }}</a>
                             <a class="dropdown-item" href="#">{{ __('Stages') }}</a>
                     </div>
@@ -57,6 +57,7 @@
                         {{ __('Tous les bureaux') }}
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">{{ __('Nairobi, Kenya') }}</a>
                             <a class="dropdown-item" href="#">{{ __('Brazzaville, Congo') }}</a>
                             <a class="dropdown-item" href="#">{{ __('A distance') }}</a>
                     </div>
@@ -67,25 +68,48 @@
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="#">{{ __('République du Congo') }}</a>
+                            <a class="dropdown-item" href="#">{{ __('Kenya') }}</a>
                     </div>
                 </li>
             </ul>
             <form class="form-inline my-2 my-lg-0">
                 <input class="form-control mr-sm-2" type="search" placeholder="Entrez votre recherche" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">CHercher</button>
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">rechercher</button>
             </form>
         </div>
     </nav>
-    <div class="row job_group pl-2 pr-2">
+    <div class="row job_group pl-2 pr-2 m-3">
         <div class="col-lg-7">
+            <div class="card card-body p-4 mb-3">
+                <div class="mt0 d-flex justify-content-between align-items-center">
+                    <h3>Stagiaire Développeur Backend Laravel/Livewire</h3>
+                </div>
+                <h5 class="text-reset mb-4">2 postes disponibles</h5>
+                <div class="k_job_infos">
+                    <div class="d-flex align-items-baseline gap-1">
+                        <strong><i class="bi bi-geo-alt-fill mr-3"></i> <span>Brazzaville, Congo</span></strong>
+                    </div>
+                    <div class="d-flex align-items-baseline gap-1">
+                        <strong><i class="bi bi-diagram-3 mr-3"></i> <span>Recherche & Développement</span></strong>
+                    </div>
+                </div>
+            </div>
+
             <div class="card card-body p-4">
                 <div class="mt0 d-flex justify-content-between align-items-center">
-                    <h3>Développeur Backend Laravel/Livewire</h3>
+                    <h3>Stagiare en Ventes</h3>
                 </div>
-                <p>
-
-                </p>
+                <h5 class="text-reset mb-4">3 postes disponibles</h5>
+                <div class="k_job_infos">
+                    <div class="d-flex align-items-baseline gap-1">
+                        <strong><i class="bi bi-geo-alt-fill mr-3"></i> <span>Brazzaville, Congo</span></strong>
+                    </div>
+                    <div class="d-flex align-items-baseline gap-1">
+                        <strong><i class="bi bi-diagram-3 mr-3"></i> <span>Recherche & Développement</span></strong>
+                    </div>
+                </div>
             </div>
+
         </div>
     </div>
 </section>

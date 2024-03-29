@@ -22,8 +22,8 @@
               <div class="price-wrap">
                 <div class="price">
                   <div>
-                    <div>{{ format_currency(0) }}</div>
-                    <div>{{ format_currency(0) }}</div>
+                    <div>GRATUIT</div>
+                    <div>GRATUIT</div>
                   </div>
                 </div>
               </div>
