@@ -162,30 +162,28 @@ class UsersTableSeeder extends Seeder
 
         $jobs = [
             [
-                [
-                    'name' => 'Stagiaire développeur Laravel / Livewire',
-                    'location' => 'Brazzaville, Congo',
-                    'department' => 'Recherche & Développement',
-                    'available_jobs' => 2,
-                    'description' => '<p>Develop high-quality software, design, and functional documentation.</p>',
-                    'is_active' => true,
-                ],
-                [
-                    'name' => 'Stagiaire Community Manager',
-                    'location' => 'Brazzaville, Congo',
-                    'department' => 'Marketing',
-                    'available_jobs' => 1,
-                    'description' => '<p>Develop high-quality software, design, and functional documentation.</p>',
-                    'is_active' => true,
-                ],
-                [
-                    'name' => 'Stagiaire Commercial',
-                    'location' => 'Brazzaville, Congo',
-                    'department' => 'Ventes',
-                    'available_jobs' => 3,
-                    'description' => '<p>Develop high-quality software, design, and functional documentation.</p>',
-                    'is_active' => true,
-                ],
+                'name' => 'Stagiaire développeur Laravel / Livewire',
+                'location' => 'Brazzaville, Congo',
+                'department' => 'Recherche & Développement',
+                'available_jobs' => 2,
+                'description' => '<p>Develop high-quality software, design, and functional documentation.</p>',
+                'is_active' => true,
+            ],
+            [
+                'name' => 'Stagiaire Community Manager',
+                'location' => 'Brazzaville, Congo',
+                'department' => 'Marketing',
+                'available_jobs' => 1,
+                'description' => '<p>Develop high-quality software, design, and functional documentation.</p>',
+                'is_active' => true,
+            ],
+            [
+                'name' => 'Stagiaire Commercial',
+                'location' => 'Brazzaville, Congo',
+                'department' => 'Ventes',
+                'available_jobs' => 3,
+                'description' => '<p>Develop high-quality software, design, and functional documentation.</p>',
+                'is_active' => true,
             ],
         ];
         foreach($jobs as $job){

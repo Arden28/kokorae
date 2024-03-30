@@ -76,20 +76,22 @@
     </nav>
     <div class="row job_group pl-2 pr-2 m-3">
         <div class="col-lg-8">
+            @foreach ($jobs as $job)
             <div class="card card-body p-4 mb-3">
                 <div class="mt0 d-flex justify-content-between align-items-center">
-                    <h3>Stagiaire Développeur Backend Laravel/Livewire</h3>
+                    <h3>{{ $job->name }}</h3>
                 </div>
-                <h5 class="text-reset mb-4">2 postes disponibles</h5>
+                <h5 class="text-reset mb-4">{{ $job->available_jobs }} postes disponibles</h5>
                 <div class="k_job_infos">
                     <div class="d-flex align-items-baseline gap-1">
-                        <strong><i class="bi bi-geo-alt-fill mr-3"></i> <span>Brazzaville, Congo</span></strong>
+                        <strong><i class="bi bi-geo-alt-fill mr-3"></i> <span>{{ $job->location }}</span></strong>
                     </div>
                     <div class="d-flex align-items-baseline gap-1">
-                        <strong><i class="bi bi-diagram-3 mr-3"></i> <span>Recherche & Développement</span></strong>
+                        <strong><i class="bi bi-diagram-3 mr-3"></i> <span>{{ $job->department }}</span></strong>
                     </div>
                 </div>
             </div>
+            @endforeach
 
         </div>
         <div class="col-lg-3">
@@ -98,6 +100,7 @@
                 <img src="{{ asset("assets/images/img_h_5-min.jpg") }}" height="200px" alt="" class="rounded shadow mb-3">
                 <h5>Obtenez plus de nous</h5>
                 <p>Ce que nous sommes, ce que nous faisons.</p>
+                {{-- <a href="{{ route('about') }}" class="btn btn-outline-primary" style="border: 1px solid #017E84;">En savoir plus</a> --}}
             </div>
             <!-- Instagram -->
             <div class="col-sm-6 col-lg-12 d-flex align-items-center pb-40">
