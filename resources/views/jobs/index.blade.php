@@ -72,14 +72,10 @@
                     </div>
                 </li>
             </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Entrez votre recherche" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">rechercher</button>
-            </form>
         </div>
     </nav>
     <div class="row job_group pl-2 pr-2 m-3">
-        <div class="col-lg-7">
+        <div class="col-lg-8">
             <div class="card card-body p-4 mb-3">
                 <div class="mt0 d-flex justify-content-between align-items-center">
                     <h3>Stagiaire Développeur Backend Laravel/Livewire</h3>
@@ -95,21 +91,24 @@
                 </div>
             </div>
 
-            <div class="card card-body p-4">
-                <div class="mt0 d-flex justify-content-between align-items-center">
-                    <h3>Stagiare en Ventes</h3>
-                </div>
-                <h5 class="text-reset mb-4">3 postes disponibles</h5>
-                <div class="k_job_infos">
-                    <div class="d-flex align-items-baseline gap-1">
-                        <strong><i class="bi bi-geo-alt-fill mr-3"></i> <span>Brazzaville, Congo</span></strong>
-                    </div>
-                    <div class="d-flex align-items-baseline gap-1">
-                        <strong><i class="bi bi-diagram-3 mr-3"></i> <span>Recherche & Développement</span></strong>
-                    </div>
-                </div>
+        </div>
+        <div class="col-lg-3">
+            <!-- A propos -->
+            <div class="col-sm-6 col-lg-12 align-items-center pb-4">
+                <img src="{{ asset("assets/images/img_h_5-min.jpg") }}" height="200px" alt="" class="rounded shadow mb-3">
+                <h5>Obtenez plus de nous</h5>
+                <p>Ce que nous sommes, ce que nous faisons.</p>
             </div>
-
+            <!-- Instagram -->
+            <div class="col-sm-6 col-lg-12 d-flex align-items-center pb-40">
+                <img src="{{ asset('assets/images/Instagram_icon.png') }}" alt="" class="me-3" width="50px" height="50px">
+                <span class="ml-1 h6">Suivez-nous sur Instagram: <a href="https://www.instagram.com/koverae_/" target="__blank" class="text-decoration-none">@koverae_</a></span>
+            </div>
+            <!-- LinkedIn -->
+            <div class="col-sm-6 col-lg-12 d-flex align-items-center pb-40 mt-4">
+                <img src="{{ asset('assets/images/linkedin.png') }}" alt="" class="me-3" width="50px" height="50px">
+                <span class="ml-1 h6">Rejoignez notre page LinkedIn: <a href="https://www.instagram.com/koverae_/" target="__blank" class="text-decoration-none">#koverae</a></span>
+            </div>
         </div>
     </div>
 </section>

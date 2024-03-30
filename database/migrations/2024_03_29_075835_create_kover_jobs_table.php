@@ -15,6 +15,12 @@ return new class extends Migration
     {
         Schema::create('kover_jobs', function (Blueprint $table) {
             $table->id();
+            $table->string('name');
+            $table->string('location');
+            $table->string('department');
+            $table->integer('available_jobs')->default(0);
+            $table->longText('description');
+            $table->boolean('is_active')->default(true);
             $table->timestamps();
         });
     }

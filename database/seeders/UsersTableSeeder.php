@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 use App\Models\Currency;
 use App\Models\KoverCompany;
+use App\Models\KoverJob;
 use App\Models\User;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
@@ -157,6 +158,38 @@ class UsersTableSeeder extends Seeder
         ];
         foreach($currencies as $currency){
             Currency::create($currency);
+        }
+
+        $jobs = [
+            [
+                [
+                    'name' => 'Stagiaire développeur Laravel / Livewire',
+                    'location' => 'Brazzaville, Congo',
+                    'department' => 'Recherche & Développement',
+                    'available_jobs' => 2,
+                    'description' => '<p>Develop high-quality software, design, and functional documentation.</p>',
+                    'is_active' => true,
+                ],
+                [
+                    'name' => 'Stagiaire Community Manager',
+                    'location' => 'Brazzaville, Congo',
+                    'department' => 'Marketing',
+                    'available_jobs' => 1,
+                    'description' => '<p>Develop high-quality software, design, and functional documentation.</p>',
+                    'is_active' => true,
+                ],
+                [
+                    'name' => 'Stagiaire Commercial',
+                    'location' => 'Brazzaville, Congo',
+                    'department' => 'Ventes',
+                    'available_jobs' => 3,
+                    'description' => '<p>Develop high-quality software, design, and functional documentation.</p>',
+                    'is_active' => true,
+                ],
+            ],
+        ];
+        foreach($jobs as $job){
+            KoverJob::create($job);
         }
     }
 }
