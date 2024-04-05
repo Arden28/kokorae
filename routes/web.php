@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\DemoController;
+use App\Http\Controllers\DocumentationController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\JobController;
 use App\Http\Controllers\Kover\DatabaseController;
@@ -48,6 +49,7 @@ Route::middleware(['auth', 'cart'])->group(function () {
 
 Route::get('/about', [HomeController::class, 'about'])->name('about');
 Route::get('/jobs', [JobController::class, 'index'])->name('jobs.index');
+Route::get('/docs', [DocumentationController::class, 'index'])->name('docs.index');
 
 // Blog routes
 Route::get('/blog', [HomeController::class, 'blog'])->name('blogs.index');

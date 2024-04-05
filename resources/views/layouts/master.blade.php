@@ -221,7 +221,7 @@
                     <ul class="links list-unstyled">
                       <li><a href="{{ route('about') }}">A propos de nous</a></li>
                       <li><a href="{{ route('jobs.index') }}">Carrières</a></li>
-                      <li><a href="#">Documentation</a></li>
+                      <li><a href="{{ route('docs.index') }}">Documentation</a></li>
                     </ul>
                   </div>
                 </div>

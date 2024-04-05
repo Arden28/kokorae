@@ -30,7 +30,7 @@
 
 <!-- Jobs Offers -->
 <section class="hr_section">
-    <!-- Nvabar -->
+    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand font-weight-bold" href="#">{{ __("Nos Offres d'emploi") }}</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -108,9 +108,13 @@
                 <span class="ml-1 h6">Suivez-nous sur Instagram: <a href="https://www.instagram.com/koverae_/" target="__blank" class="text-decoration-none">@koverae_</a></span>
             </div>
             <!-- LinkedIn -->
-            <div class="col-sm-6 col-lg-12 d-flex align-items-center pb-40 mt-4">
+            <div class="col-sm-6 col-lg-12 d-flex pb-40 mt-4">
                 <img src="{{ asset('assets/images/linkedin.png') }}" alt="" class="me-3" width="50px" height="50px">
                 <span class="ml-1 h6">Rejoignez notre page LinkedIn: <a href="https://www.instagram.com/koverae_/" target="__blank" class="text-decoration-none">#koverae</a></span>
+            </div>
+            <!-- Mail d'applications -->
+            <div class="col-sm-6 col-lg-12 d-flex pb-40 mt-4">
+                <p>Pour postuler à une de nos offres, veuillez envoyer vos informations à notre mail: <a href="mailto:jobs@koverae.com">jobs@koverae.com</a></p>
             </div>
         </div>
     </div>
