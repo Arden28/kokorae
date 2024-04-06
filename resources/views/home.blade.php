@@ -52,7 +52,7 @@
             <!-- Texte Gauche -->
             <div class="intro col-lg-6 col-md-12 col-sm-12 align-items-start justify-content-start text-left">
                 <h1 class="text-black mb-4" data-aos="fade-up" data-aos-delay="100">
-                    Toute votre entreprise sur une seule plateforme.
+                    Votre entreprise sur une seule plateforme.
                 </h1>
                 <p class="text-black align-items-start text-left mb-5" data-aos-delay="100">
                     Des dizaines d'entreprises comme la vôtre font confiance à <strong>Koverae</strong>

@@ -827,10 +827,10 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
 #hero{
     height: 100%;
     margin: 86px 0 0 0;
-    padding-top: 30px;
+    padding-top: 31px;
 }
 .hero-ban .intro-group{
-
+    /*  */
 }
 .hero-ban .intro h1{
     font-family: "Caveat", Helvetica;
