@@ -40,7 +40,7 @@ class VonageService{
             text: $message,
         );
 
-        app(Client::class)
+        $this->client
             ->messages()
             ->send($whatsAppMessage);
 
