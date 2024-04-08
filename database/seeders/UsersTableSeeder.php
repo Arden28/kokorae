@@ -48,8 +48,8 @@ class UsersTableSeeder extends Seeder
         $company = KoverCompany::create([
             'kover_id' => $user->id, // Assuming 'kover_id' relates to an existing ID or null.
             'name' => 'Koverae SARL',
-            'domain_name' => 'admin'.env('APP_DOMAIN'),
-            'website' => 'https://admin'.env('APP_DOMAIN').'/web',
+            'domain_name' => 'admin.'.env('APP_DOMAIN'),
+            'website' => 'https://admin.'.env('APP_DOMAIN').'/web',
             'tax_report' => 0, // Or use specific logic to generate tax_report values.
             'logo' => 'logo', // Generates a random business-related image URL.
         ]);
