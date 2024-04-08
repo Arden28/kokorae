@@ -1,6 +1,6 @@
 <?php
 
-namespace App\SMS\Services;
+namespace App\Services\SMS;
 
 use Vonage\Client;
 use Vonage\Client\Credentials\Basic;

@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\SMS\Services\VonageService;
+use App\Services\SMS\VonageService;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
