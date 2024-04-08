@@ -36,26 +36,26 @@ class VonageService{
 
         $whatsAppMessage = new WhatsAppText(
             to: $to,
-            from: env('VONAGE_WHATSAPP_FROM'),
+            from: 242065996406,
             text: $message,
         );
 
-        $this->client
+        app(Client::class)
             ->messages()
             ->send($whatsAppMessage);
 
-        // $response = $this->client->message()->send([
-        //     'type' => 'text',
-        //     'to' => 'whatsapp:'.$to, // Ensure to include 'whatsapp:' prefix and use E.164 format
-        //     'from' => 'whatsapp:065996406', // Your WhatsApp registered number with "whatsapp:" prefix
-        //     'message' => [
-        //         'content' => [
-        //             'type' => 'text',
-        //             'text' => $message
-        //         ]
-        //     ],
-        //     'channel' => 'whatsapp'
-        // ]);
+        $response = $this->client->message()->send([
+            'type' => 'text',
+            'to' => 'whatsapp:'.$to, // Ensure to include 'whatsapp:' prefix and use E.164 format
+            'from' => 'whatsapp:065996406', // Your WhatsApp registered number with "whatsapp:" prefix
+            'message' => [
+                'content' => [
+                    'type' => 'text',
+                    'text' => $message
+                ]
+            ],
+            'channel' => 'whatsapp'
+        ]);
 
         // if ($response->isSuccessful()) {
         //     echo "Message sent successfully!";
