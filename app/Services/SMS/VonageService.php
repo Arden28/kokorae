@@ -19,17 +19,14 @@ class VonageService{
 
     public function sendSMS($to, $message)
     {
-        try {
-            $response = $this->client->message()->send([
-                'to' => $to,
-                'from' => env('VONAGE_SMS_FROM'),
-                'text' => $message,
-            ]);
+        $response = $this->client->sms()->send(new \Vonage\SMS\Message\SMS($to, env('VONAGE_SMS_FROM'), $message));
 
-            return $response;
-        } catch (\Exception $e) {
-            Log::error('Failed to send SMS: ' . $e->getMessage());
-            return false;
+        $message = $response->current();
+
+        if ($message->getStatus() == 0) {
+            echo "Le message a été envoyé avec succès\n";
+        } else {
+            echo "Le message a échoué avec le statut: " . $message->getStatus() . "\n";
         }
     }
 }

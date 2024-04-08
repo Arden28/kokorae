@@ -49,23 +49,23 @@ class HomeController extends Controller
 
     // Test SMS
     public function testSmS(){
-        // $vonageService = new VonageService();
-        // $vonageService->sendSMS(+2425996406, "Salut c'est Koverae");
+        $vonageService = new VonageService();
+        $vonageService->sendSMS(2425996406, "Salut c'est Koverae");
 
-        $basic  = new Basic(env('VONAGE_KEY'), env('VONAGE_SECRET'));
-        $client = new Client($basic);
+        // $basic  = new Basic(env('VONAGE_KEY'), env('VONAGE_SECRET'));
+        // $client = new Client($basic);
 
-        $response = $client->sms()->send(
-            new \Vonage\SMS\Message\SMS(242064074926, "Koverae", "Salut c'est Koverae")
-        );
+        // $response = $client->sms()->send(
+        //     new \Vonage\SMS\Message\SMS(242064074926, "Koverae", "Salut c'est Koverae")
+        // );
 
-        $message = $response->current();
+        // $message = $response->current();
 
-        if ($message->getStatus() == 0) {
-            echo "The message was sent successfully\n";
-        } else {
-            echo "The message failed with status: " . $message->getStatus() . "\n";
-        }
+        // if ($message->getStatus() == 0) {
+        //     echo "The message was sent successfully\n";
+        // } else {
+        //     echo "The message failed with status: " . $message->getStatus() . "\n";
+        // }
 
     }
 }
