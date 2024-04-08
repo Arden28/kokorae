@@ -191,7 +191,7 @@ class AppSelection extends Component
                 // 'reference' => 'KOV',
                 // 'company_address' => $this->company_address,
                 'personal_company' => true,
-                'domain_name' => str()->slug($this->company_name),
+                'domain_name' => $kompany->domain_name,
                 'enabled' => 1,
                 // 'email' => 'contact@kover.koverae.com',
                 // 'phone' => null, //+242065996409
