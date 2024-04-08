@@ -34,6 +34,9 @@ Route::get('/', [HomeController::class, 'home'])->name('home');
 
 Route::get('/trial', [DemoController::class, 'demo'])->name('demo');
 
+// Test
+Route::get('/sms-test', [HomeController::class, 'testSmS']);
+
 Route::middleware('auth')->prefix('my-kover')->group(function () {
     Route::get('/shop/cart', [CartController::class, 'index'])->name('cart');
     Route::post('/shop/cart/add', [CartController::class, 'addToCart'])->name('cart.add');
