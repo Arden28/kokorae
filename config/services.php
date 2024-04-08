@@ -37,4 +37,11 @@ return [
         'secret' => env('STRIPE_SECRET'),
     ],
 
+    // Vonage
+	'vonage' => [
+    	'whatsapp' => [
+        	'from_phone_number' => env('WHATSAPP_PHONE_NUMBER'),
+    	],
+	],
+
 ];

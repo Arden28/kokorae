@@ -6,6 +6,7 @@ use Vonage\Client;
 use Vonage\Client\Credentials\Basic;
 use Illuminate\Support\Facades\Log;
 use Vonage\Message\WhatsApp;
+use Vonage\Messages\Channel\WhatsApp\WhatsAppText;
 
 
 class VonageService{
@@ -32,23 +33,34 @@ class VonageService{
     }
 
     public function sendWhatsApp($to, $message){
-        $response = $this->client->message()->send([
-            'type' => 'text',
-            'to' => 'whatsapp:'.$to, // Ensure to include 'whatsapp:' prefix and use E.164 format
-            'from' => 'whatsapp:065996406', // Your WhatsApp registered number with "whatsapp:" prefix
-            'message' => [
-                'content' => [
-                    'type' => 'text',
-                    'text' => $message
-                ]
-            ],
-            'channel' => 'whatsapp'
-        ]);
 
-        if ($response->isSuccessful()) {
-            echo "Message sent successfully!";
-        } else {
-            echo "Failed to send message. Error: " . $response->getErrors()[0]['detail'];
-        }
+        $whatsAppMessage = new WhatsAppText(
+            to: $to,
+            from: env('VONAGE_WHATSAPP_FROM'),
+            text: $message,
+        );
+
+        app(Client::class)
+            ->messages()
+            ->send($whatsAppMessage);
+
+        // $response = $this->client->message()->send([
+        //     'type' => 'text',
+        //     'to' => 'whatsapp:'.$to, // Ensure to include 'whatsapp:' prefix and use E.164 format
+        //     'from' => 'whatsapp:065996406', // Your WhatsApp registered number with "whatsapp:" prefix
+        //     'message' => [
+        //         'content' => [
+        //             'type' => 'text',
+        //             'text' => $message
+        //         ]
+        //     ],
+        //     'channel' => 'whatsapp'
+        // ]);
+
+        // if ($response->isSuccessful()) {
+        //     echo "Message sent successfully!";
+        // } else {
+        //     echo "Failed to send message. Error: " . $response->getErrors()[0]['detail'];
+        // }
     }
 }
