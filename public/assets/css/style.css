@@ -827,7 +827,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
 #hero{
     height: 100%;
     margin: 86px 0 0 0;
-    padding-top: 31px;
+    padding-top: 30px;
 }
 .hero-ban .intro-group{
     /*  */
@@ -840,13 +840,14 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
 }
 .hero-ban .intro .intro-buttons{
     font-size: 14px;
-    height: 50px;
+    height: auto;
     margin: 0 0 12px 0;
     min-height: auto;
     min-width: auto;
 }
     .hero-ban .intro .intro-buttons .btn{
         padding: 15px 5px 15px 5px;
+        height: auto;
         min-height: auto;
         min-width: auto;
         /* text-align: center; */
