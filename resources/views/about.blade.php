@@ -25,7 +25,7 @@
 
     <div class="row feature align-items-center justify-content-between">
       <div class="col-lg-5 mb-4 mb-lg-0 section-stack" data-aos="fade-up" data-aos-delay="0">
-        <img src="{{ asset('assets/images/img_h_5-min.jpg')}}" alt="Image" class="img-fluid">
+        <img src="{{ asset('assets/images/img-h-16.png')}}" alt="Image" class="img-fluid rounded">
       </div>
       <div class="col-lg-7 section-title" data-aos="fade-up" data-aos-delay="100">
         <h2 class="text-title font-weight-bold mb-1 heading" id="first-title">
@@ -92,7 +92,7 @@
 
         </div>
         <div class="col-lg-5 mb-4 mb-lg-0 section-stack" data-aos="fade-up" data-aos-delay="0">
-            <img src="{{ asset('assets/images/img_h_5-min.jpg')}}" alt="Image" class="img-fluid">
+            <img src="{{ asset('assets/images/img-h-11.png')}}" alt="Image" class="img-fluid">
         </div>
 
     </div>

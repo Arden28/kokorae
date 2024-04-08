@@ -97,7 +97,7 @@
         <div class="col-lg-3">
             <!-- A propos -->
             <div class="col-sm-6 col-lg-12 align-items-center pb-4">
-                <img src="{{ asset("assets/images/img_h_5-min.jpg") }}" height="200px" alt="" class="rounded shadow mb-3">
+                <img src="{{ asset("assets/images/img-h-15.png") }}" height="200px" alt="" class="rounded shadow mb-3">
                 <h5>Obtenez plus de nous</h5>
                 <p>Ce que nous sommes, ce que nous faisons.</p>
                 {{-- <a href="{{ route('about') }}" class="btn btn-outline-primary" style="border: 1px solid #017E84;">En savoir plus</a> --}}

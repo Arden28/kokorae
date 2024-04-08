@@ -18,7 +18,7 @@
 @endsection
 
 @section('content')
-<div class="row g-0 flex-fill site-section">
+<div class="row g-0 flex-fill site-section" id="hero">
 
     <div class="col-12 col-lg-6 col-xl-6 d-none d-lg-block">
         <!-- Photo -->

@@ -74,7 +74,8 @@
             <!-- Illustration -->
             <div class="intro col-lg-6 col-md-12 col-sm-12">
                 <!-- Vidéo illustrative -->
-                    <video src="#" muted autoplay loop class="homepage-video shadow"></video>
+                    {{-- <video src="#" muted autoplay loop class="homepage-video shadow"></video> --}}
+                    <img src="{{ asset('assets/images/img-h-7.png') }}" alt="" class="homepage-video shadow">
             </div>
 
         </div>
@@ -200,8 +201,6 @@
 </div>
 
 <!-- Koverae For PMEs -->
-
-
 <section class="features-lg ">
   <div class="container">
     <div class="row feature align-items-center justify-content-between">
@@ -209,10 +208,10 @@
 
         <div class="image-stack">
           <div class="image-stack__item image-stack__item--top">
-            <img src="{{ asset('assets/images/img_h_2-min.jpg')}}" alt="">
+            <img src="{{ asset('assets/images/img-h-1.png')}}" class="rounded" alt="">
           </div>
           <div class="image-stack__item image-stack__item--bottom">
-            <img src="{{ asset('assets/images/img_h_3-min.jpg')}}" alt="">
+            <img src="{{ asset('assets/images/img-h-4.png')}}" class="rounded" alt="">
           </div>
         </div>
 
@@ -237,12 +236,13 @@
     </div>
   </div>
 </section>
+
 <!-- Testimonial for simplicity -->
 <section class="pt-24 pb-16">
     <div class="container">
         <div class="bg-white p-4 testimony-1 flex-col shadow">
             <picture class="mb-6 col-md-3 image-testimony">
-                <img class="mr-6 rounded" src="{{ asset('assets/images/person_2-min.png')}}" height="150px" alt="">
+                <img class="mr-6 rounded-circle" src="{{ asset('assets/images/person_2-min.png')}}" height="150px" alt="">
             </picture>
             <div class="col-md-9">
                 <h5 class="mb-4 text-black caveat" style="font-size: 26px;">
@@ -263,7 +263,7 @@
 
     <div class="row feature align-items-center justify-content-between">
       <div class="col-lg-5 mb-4 mb-lg-0 section-stack" data-aos="fade-up" data-aos-delay="0">
-        <img src="{{ asset('assets/images/img_h_5-min.jpg')}}" alt="Image" class="img-fluid">
+        <img src="{{ asset('assets/images/img-h-8.png')}}" alt="Image" class="img-fluid rounded">
       </div>
       <div class="col-lg-7 section-title" data-aos="fade-up" data-aos-delay="100">
         <h2 class="text-title font-weight-bold mb-1 heading" id="first-title">
@@ -290,18 +290,6 @@
 <section class="features-lg ">
   <div class="container">
     <div class="row feature align-items-center justify-content-between">
-      <div class="col-lg-4 section-stack order-lg-2 mb-4 mb-lg-0 position-relative" data-aos="fade-up" data-aos-delay="0">
-
-        <div class="image-stack">
-          <div class="image-stack__item image-stack__item--top">
-            <img src="{{ asset('assets/images/img_h_8-min.jpg')}}" alt="">
-          </div>
-          <div class="image-stack__item image-stack__item--bottom">
-            <img src="{{ asset('assets/images/img_h_9-min.jpg')}}" alt="">
-          </div>
-        </div>
-
-      </div>
       <div class="col-lg-7 section-title" data-aos="fade-up" data-aos-delay="100">
         <h2 class="text-title font-weight-bold mb-1 heading" id="first-title">
             Simplification par le Design
@@ -316,6 +304,9 @@
             <a class="text-decoration-none cta-link" href="{{ route('demo') }}">Testez notre interface intuitive <i class="bi bi-arrow-right"></i></a>
         </p>
 
+      </div>
+      <div class="col-lg-5 mb-4 mb-lg-0 section-stack" data-aos="fade-up" data-aos-delay="0">
+        <img src="{{ asset('assets/images/img-h-6.png')}}" alt="Image" class="img-fluid rounded">
       </div>
 
     </div>
@@ -337,7 +328,7 @@
             <div class="testimonial-item">
               <div class="d-flex align-items-center mb-4">
                 <div class="photo mr-3">
-                  <img src="{{ asset('assets/images/person_1-min.png')}}" alt="Image" class="img-fluid">
+                  <img src="{{ asset('assets/images/person_1-min.png')}}" alt="Image" class="img-fluid rounded-circle">
                 </div>
                 <div class="author">
                   <cite class="d-block mb-0">MASSAMBA Judie Brelle</cite>
@@ -356,7 +347,7 @@
             <div class="testimonial-item">
               <div class="d-flex align-items-center mb-4">
                 <div class="photo mr-3">
-                  <img src="{{ asset('assets/images/person_1-min.png')}}" alt="Image" class="img-fluid">
+                  <img src="{{ asset('assets/images/person_1-min.png')}}" alt="Image" class="img-fluid rounded-circle">
                 </div>
                 <div class="author">
                   <cite class="d-block mb-0">GUYNO Dorcas</cite>
