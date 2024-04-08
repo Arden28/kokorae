@@ -34,13 +34,9 @@ class VonageService{
 
     public function sendWhatsApp($to, $message){
 
-        $whatsAppMessage = new WhatsAppText(
-            to: $to,
-            from: 242065996406,
-            text: $message,
-        );
+        $whatsAppMessage = new WhatsAppText($to,242065996406,$message);
 
-        app(Client::class)
+        $response = app(Client::class)
             ->messages()
             ->send($whatsAppMessage);
 
@@ -57,10 +53,10 @@ class VonageService{
             'channel' => 'whatsapp'
         ]);
 
-        // if ($response->isSuccessful()) {
-        //     echo "Message sent successfully!";
-        // } else {
-        //     echo "Failed to send message. Error: " . $response->getErrors()[0]['detail'];
-        // }
+        if ($response->isSuccessful()) {
+            echo "Message sent successfully!";
+        } else {
+            echo "Failed to send message. Error: " . $response->getErrors()[0]['detail'];
+        }
     }
 }
