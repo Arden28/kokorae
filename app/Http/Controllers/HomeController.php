@@ -52,7 +52,8 @@ class HomeController extends Controller
 
         $vonageService = new VonageService();
         // Send SMS
-        $vonageService->sendSMS(242065996406, "Salut c'est Koverae");
+        // $vonageService->sendSMS(242065996406, "Salut c'est Koverae");
+        $vonageService->sendWhatsApp(242064074926, "Bienvenue dans la famille Koverae");
         // Send WhatsApp message
 
     }

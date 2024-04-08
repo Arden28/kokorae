@@ -32,23 +32,23 @@ class VonageService{
     }
 
     public function sendWhatsApp($to, $message){
-        // Create the WhatsApp message payload
-        $message = new WhatsApp\Message(
-            'whatsapp:destination_number', // The recipient number with "whatsapp:" prefix
-            'whatsapp:your_registered_number', // Your WhatsApp registered number with "whatsapp:" prefix
-            [
-                'type' => 'text',
-                'text' => 'Hello from Vonage WhatsApp API!'
-            ]
-        );
-
-        // Send the message
-        $response = $client->message()->send($message);
+        $response = $this->client->message()->send([
+            'type' => 'text',
+            'to' => 'whatsapp:'.$to, // Ensure to include 'whatsapp:' prefix and use E.164 format
+            'from' => 'whatsapp:065996406', // Your WhatsApp registered number with "whatsapp:" prefix
+            'message' => [
+                'content' => [
+                    'type' => 'text',
+                    'text' => $message
+                ]
+            ],
+            'channel' => 'whatsapp'
+        ]);
 
         if ($response->isSuccessful()) {
             echo "Message sent successfully!";
         } else {
-            echo "Failed to send message.";
+            echo "Failed to send message. Error: " . $response->getErrors()[0]['detail'];
         }
     }
 }
