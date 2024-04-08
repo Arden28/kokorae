@@ -56,7 +56,7 @@ class HomeController extends Controller
         $client = new Client($basic);
 
         $response = $client->sms()->send(
-            new \Vonage\SMS\Message\SMS("2425996406", "Koverae", "Salut c'est Koverae")
+            new \Vonage\SMS\Message\SMS(242065996406, "Koverae", "Salut c'est Koverae")
         );
 
         $message = $response->current();
