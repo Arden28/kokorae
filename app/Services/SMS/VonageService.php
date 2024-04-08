@@ -19,7 +19,7 @@ class VonageService{
 
     public function sendSMS($to, $message)
     {
-        $response = $this->client->sms()->send(new \Vonage\SMS\Message\SMS($to, env('VONAGE_SMS_FROM'), $message));
+        $response = $this->client->sms()->send(new \Vonage\SMS\Message\SMS($to, env('APP_NAME'), $message));
 
         $message = $response->current();
 
