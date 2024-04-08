@@ -50,7 +50,7 @@ class HomeController extends Controller
     // Test SMS
     public function testSmS(){
         $vonageService = new VonageService();
-        $vonageService->sendSMS(242064074926, "Salut c'est Koverae");
+        $vonageService->sendSMS(242064074926, "Ici Koverae");
 
         // $basic  = new Basic(env('VONAGE_KEY'), env('VONAGE_SECRET'));
         // $client = new Client($basic);
