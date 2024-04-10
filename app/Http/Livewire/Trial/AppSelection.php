@@ -132,10 +132,14 @@ class AppSelection extends Component
             $this->validate();
             $kovers = ModelsUser::all();
             $users = User::all();
-            if($users->firstWhere('email', $this->email) && $kovers->firstWhere('email', $this->email) ){
+            if($users->firstWhere('email', $this->email) || $kovers->firstWhere('email', $this->email) ){
 
                 $kover = $kovers->firstWhere('email', $this->email);
                 $user = $users->firstWhere('email', $this->email);
+            }elseif($users->firstWhere('phone', $this->phone) || $kovers->firstWhere('phone', $this->phone)){
+
+                $user = $users->firstWhere('phone', $this->phone);
+                $kover = $kovers->firstWhere('phone', $this->phone);
             }else{
 
                 // Create Kover
@@ -231,7 +235,7 @@ class AppSelection extends Component
 
         if (config('app.env') === 'local') {
             // The environment is local
-        $url = "http://{$companySlug}.koverae.localhost/configure?apps={$apps}&company={$companyInfo->name}&u_id={$companyInfo->user_id}";
+        $url = "http://{$companySlug}/configure?apps={$apps}&company={$companyInfo->name}&u_id={$companyInfo->user_id}";
         } else {
             // The environment is not local
         $url = "https://{$companySlug}.koverae.com/configure?apps={$apps}&company={$companyInfo->name}&u_id={$companyInfo->user_id}";

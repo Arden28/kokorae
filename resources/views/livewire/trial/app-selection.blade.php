@@ -31,7 +31,7 @@
                 <!-- Ventes -->
                 <label class="col-sm-6 col-md-4 col-xl-3 d-flex pl-0 pr-0 mr-lg-1 shadow-1" wire:click="toggleApp('sales')" wire:click="toggleApp('sales')" style="cursor: pointer;">
                     <div class="card container d-flex w-100 align-items-center flex-row p-2">
-                        <img src="{{ asset("assets/images/app-icons/sales.png") }}" height="40px" alt="" class="koverae_enterprise_pricing_app_icon">
+                        <img src="{{ asset("assets/images/app-icons/sales.png") }}" height="40px" alt="" class="koverae_enterprise_pricing_app_icon rounded">
                         <div class="koverae_enterprise_pricing_app_name text-truncate ml-1 mr-1">
                             <span class="h6 text-black">
                                 {{ __('Ventes') }}
@@ -49,7 +49,7 @@
                 <!-- CRM -->
                 <label class="col-sm-6 col-md-4 col-xl-3 d-flex pl-0 pr-0 mr-lg-1 shadow-1" wire:click="toggleApp('crm')" style="cursor: pointer;">
                     <div class="card container d-flex w-100 align-items-center flex-row p-2">
-                        <img src="{{ asset("assets/images/app-icons/crm.png") }}" height="40px" alt="" class="koverae_enterprise_pricing_app_icon">
+                        <img src="{{ asset("assets/images/app-icons/crm.png") }}" height="40px" alt="" class="koverae_enterprise_pricing_app_icon rounded">
                         <div class="koverae_enterprise_pricing_app_name text-truncate ml-1 mr-1">
                             <span class="h6 text-black">
                                 {{ __('CRM') }}
@@ -67,7 +67,7 @@
                 <!-- Facturation -->
                 <label class="col-sm-6 col-md-4 col-xl-3 d-flex pl-0 pr-0 mr-lg-1 shadow-1" wire:click="toggleApp('invoice')" style="cursor: pointer;">
                     <div class="card container d-flex w-100 align-items-center flex-row p-2">
-                        <img src="{{ asset("assets/images/app-icons/invoice.png") }}" height="40px" alt="" class="koverae_enterprise_pricing_app_icon">
+                        <img src="{{ asset("assets/images/app-icons/invoice.png") }}" height="40px" alt="" class="koverae_enterprise_pricing_app_icon rounded">
                         <div class="koverae_enterprise_pricing_app_name text-truncate ml-1 mr-1">
                             <span class="h6 text-black">
                                 {{ __('Facturation') }}
@@ -86,7 +86,7 @@
                 <!-- Abonnements -->
                 <label class="col-sm-6 col-md-4 col-xl-3 d-flex pl-0 pr-0 mr-lg-1 shadow-1" wire:click="toggleApp('subscription')" style="cursor: pointer;">
                     <div class="card container d-flex w-100 align-items-center flex-row p-2">
-                        <img src="{{ asset("assets/images/app-icons/subscription.png") }}" height="40px" alt="" class="koverae_enterprise_pricing_app_icon">
+                        <img src="{{ asset("assets/images/app-icons/subscription.png") }}" height="40px" alt="" class="koverae_enterprise_pricing_app_icon rounded">
                         <div class="koverae_enterprise_pricing_app_name text-truncate ml-1 mr-1">
                             <span class="h6 text-black">
                                 {{ __('Abonnements') }}
@@ -105,7 +105,7 @@
                 <!-- Point de Ventes -->
                 <label class="col-sm-6 col-md-4 col-xl-3 d-flex pl-0 pr-0 mr-lg-1 shadow-1" wire:click="toggleApp('pos')" style="cursor: pointer;">
                     <div class="card container d-flex w-100 align-items-center flex-row p-2">
-                        <img src="{{ asset("assets/images/app-icons/pos.png") }}" height="40px" alt="" class="koverae_enterprise_pricing_app_icon">
+                        <img src="{{ asset("assets/images/app-icons/pos.png") }}" height="40px" alt="" class="koverae_enterprise_pricing_app_icon rounded">
                         <div class="koverae_enterprise_pricing_app_name text-truncate ml-1 mr-1">
                             <span class="h6 text-black">
                                 {{ __('Point de Ventes') }}
@@ -131,7 +131,7 @@
                 <!-- Comptabilité -->
                 <label class="col-sm-6 col-md-4 col-xl-3 d-flex pl-0 pr-0 mr-lg-1 shadow-1" wire:click="toggleApp('accounting')" style="cursor: pointer;">
                     <div class="card container d-flex w-100 align-items-center flex-row p-2">
-                        <img src="{{ asset("assets/images/app-icons/accounting.png") }}" height="40px" alt="" class="koverae_enterprise_pricing_app_icon">
+                        <img src="{{ asset("assets/images/app-icons/accounting.png") }}" height="40px" alt="" class="koverae_enterprise_pricing_app_icon rounded">
                         <div class="koverae_enterprise_pricing_app_name text-truncate ml-1 mr-1">
                             <span class="h6 text-black">
                                 {{ __('Comptabilité') }}
@@ -150,7 +150,7 @@
                 <!-- Projet -->
                 <label class="col-sm-6 col-md-4 col-xl-3 d-flex pl-0 pr-0 mr-lg-1 shadow-1" wire:click="toggleApp('projects')" style="cursor: pointer;">
                     <div class="card container d-flex w-100 align-items-center flex-row p-2">
-                        <img src="{{ asset("assets/images/app-icons/projects.png") }}" height="40px" alt="" class="koverae_enterprise_pricing_app_icon">
+                        <img src="{{ asset("assets/images/app-icons/projects.png") }}" height="40px" alt="" class="koverae_enterprise_pricing_app_icon rounded">
                         <div class="koverae_enterprise_pricing_app_name text-truncate ml-1 mr-1">
                             <span class="h6 text-black">
                                 {{ __('Projet') }}
@@ -169,7 +169,7 @@
                 <!-- Inventaire -->
                 <label class="col-sm-6 col-md-4 col-xl-3 d-flex pl-0 pr-0 mr-lg-1 shadow-1" wire:click="toggleApp('inventory')" style="cursor: pointer;">
                     <div class="card container d-flex w-100 align-items-center flex-row p-2">
-                        <img src="{{ asset("assets/images/app-icons/inventory.png") }}" height="40px" alt="" class="koverae_enterprise_pricing_app_icon">
+                        <img src="{{ asset("assets/images/app-icons/inventory.png") }}" height="40px" alt="" class="koverae_enterprise_pricing_app_icon rounded">
                         <div class="koverae_enterprise_pricing_app_name text-truncate ml-1 mr-1">
                             <span class="h6 text-black">
                                 {{ __('Inventaire') }}
@@ -188,7 +188,7 @@
                 <!-- Achats -->
                 <label class="col-sm-6 col-md-4 col-xl-3 d-flex pl-0 pr-0 mr-lg-1 shadow-1" wire:click="toggleApp('purchase')" style="cursor: pointer;">
                     <div class="card container d-flex w-100 align-items-center flex-row p-2">
-                        <img src="{{ asset("assets/images/app-icons/purchase.png") }}" height="40px" alt="" class="koverae_enterprise_pricing_app_icon">
+                        <img src="{{ asset("assets/images/app-icons/purchase.png") }}" height="40px" alt="" class="koverae_enterprise_pricing_app_icon rounded">
                         <div class="koverae_enterprise_pricing_app_name text-truncate ml-1 mr-1">
                             <span class="h6 text-black">
                                 {{ __('Achats') }}
@@ -207,7 +207,7 @@
                 <!-- Docs -->
                 <label class="col-sm-6 col-md-4 col-xl-3 d-flex pl-0 pr-0 mr-lg-1 shadow-1" wire:click="toggleApp('docs')" style="cursor: pointer;">
                     <div class="card container d-flex w-100 align-items-center flex-row p-2">
-                        <img src="{{ asset("assets/images/app-icons/docs.png") }}" height="40px" alt="" class="koverae_enterprise_pricing_app_icon">
+                        <img src="{{ asset("assets/images/app-icons/docs.png") }}" height="40px" alt="" class="koverae_enterprise_pricing_app_icon rounded">
                         <div class="koverae_enterprise_pricing_app_name text-truncate ml-1 mr-1">
                             <span class="h6 text-black">
                                 {{ __('Docs') }}
@@ -232,7 +232,7 @@
                 <!-- Faabrication -->
                 <label class="col-sm-6 col-md-4 col-xl-3 d-flex pl-0 pr-0 mr-lg-1 shadow-1" wire:click="toggleApp('mrp')" style="cursor: pointer;">
                     <div class="card container d-flex w-100 align-items-center flex-row p-2">
-                        <img src="{{ asset("assets/images/app-icons/mrp.png") }}" height="40px" alt="" class="koverae_enterprise_pricing_app_icon">
+                        <img src="{{ asset("assets/images/app-icons/mrp.png") }}" height="40px" alt="" class="koverae_enterprise_pricing_app_icon rounded">
                         <div class="koverae_enterprise_pricing_app_name text-truncate ml-1 mr-1">
                             <span class="h6 text-black">
                                 {{ __('Fabrication') }}
@@ -251,7 +251,7 @@
                 <!-- Qualité -->
                 <label class="col-sm-6 col-md-4 col-xl-3 d-flex pl-0 pr-0 mr-lg-1 shadow-1" wire:click="toggleApp('quality')" style="cursor: pointer;">
                     <div class="card container d-flex w-100 align-items-center flex-row p-2">
-                        <img src="{{ asset("assets/images/app-icons/quality.png") }}" height="40px" alt="" class="koverae_enterprise_pricing_app_icon">
+                        <img src="{{ asset("assets/images/app-icons/quality.png") }}" height="40px" alt="" class="koverae_enterprise_pricing_app_icon rounded">
                         <div class="koverae_enterprise_pricing_app_name text-truncate ml-1 mr-1">
                             <span class="h6 text-black">
                                 {{ __('Qualité') }}
@@ -277,7 +277,7 @@
                 <!-- Personnels -->
                 <label class="col-sm-6 col-md-4 col-xl-3 d-flex pl-0 pr-0 mr-lg-1 shadow-1" wire:click="toggleApp('employee')" style="cursor: pointer;">
                     <div class="card container d-flex w-100 align-items-center flex-row p-2">
-                        <img src="{{ asset("assets/images/app-icons/employee.png") }}" height="40px" alt="" class="koverae_enterprise_pricing_app_icon">
+                        <img src="{{ asset("assets/images/app-icons/employee.png") }}" height="40px" alt="" class="koverae_enterprise_pricing_app_icon rounded">
                         <div class="koverae_enterprise_pricing_app_name text-truncate ml-1 mr-1">
                             <span class="h6 text-black">
                                 {{ __('Personnels') }}
@@ -296,7 +296,7 @@
                 <!-- Présences -->
                 <label class="col-sm-6 col-md-4 col-xl-3 d-flex pl-0 pr-0 mr-lg-1 shadow-1" wire:click="toggleApp('attendances')" style="cursor: pointer;">
                     <div class="card container d-flex w-100 align-items-center flex-row p-2">
-                        <img src="{{ asset("assets/images/app-icons/attendances.png") }}" height="40px" alt="" class="koverae_enterprise_pricing_app_icon">
+                        <img src="{{ asset("assets/images/app-icons/attendances.png") }}" height="40px" alt="" class="koverae_enterprise_pricing_app_icon rounded">
                         <div class="koverae_enterprise_pricing_app_name text-truncate ml-1 mr-1">
                             <span class="h6 text-black">
                                 {{ __('Présences') }}
@@ -315,7 +315,7 @@
                 <!-- Dépenses -->
                 <label class="col-sm-6 col-md-4 col-xl-3 d-flex pl-0 pr-0 mr-lg-1 shadow-1" wire:click="toggleApp('expenses')" style="cursor: pointer;">
                     <div class="card container d-flex w-100 align-items-center flex-row p-2">
-                        <img src="{{ asset("assets/images/app-icons/expenses.png") }}" height="40px" alt="" class="koverae_enterprise_pricing_app_icon">
+                        <img src="{{ asset("assets/images/app-icons/expenses.png") }}" height="40px" alt="" class="koverae_enterprise_pricing_app_icon rounded">
                         <div class="koverae_enterprise_pricing_app_name text-truncate ml-1 mr-1">
                             <span class="h6 text-black">
                                 {{ __('Dépenses') }}
@@ -334,7 +334,7 @@
                 <!-- Congés -->
                 <label class="col-sm-6 col-md-4 col-xl-3 d-flex pl-0 pr-0 mr-lg-1 shadow-1" wire:click="toggleApp('timeoff')" style="cursor: pointer;">
                     <div class="card container d-flex w-100 align-items-center flex-row p-2">
-                        <img src="{{ asset("assets/images/app-icons/timeoff.png") }}" height="40px" alt="" class="koverae_enterprise_pricing_app_icon">
+                        <img src="{{ asset("assets/images/app-icons/timeoff.png") }}" height="40px" alt="" class="koverae_enterprise_pricing_app_icon rounded">
                         <div class="koverae_enterprise_pricing_app_name text-truncate ml-1 mr-1">
                             <span class="h6 text-black">
                                 {{ __('Congés') }}

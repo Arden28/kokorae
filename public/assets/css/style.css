@@ -235,11 +235,11 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
             color: #000;
             font-weight: 700;
         }
-        .site-nav .site-navigation .site-menu > li.cta-button a:hover {
-          /* color: #000000;
+        /* .site-nav .site-navigation .site-menu > li.cta-button a:hover {
+          color: #000000;
           background-color: transparent;
-          border-color: rgba(255, 255, 255, 0.3); */
-         }
+          border-color: rgba(255, 255, 255, 0.3);
+         } */
       .site-nav .site-navigation .site-menu > li.active > a {
         color: #ffffff;
     }
@@ -373,7 +373,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
   .site-nav.sticky .site-navigation .site-menu .has-children:hover > a, .site-nav .site-navigation .site-menu .has-children:focus > a, .site-nav .site-navigation .site-menu .has-children:active > a {
     color: #000000; }
 
-  .site-nav .site-navigation .site-menu > li.cta-button a {
+  .site-nav.sticky .site-navigation .site-menu > li.cta-button a {
     font-size: 13px;
     font-weight: 500;
     color: #ffffff;
@@ -397,11 +397,11 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
     background: #1e1e1e;
 }
 
-.site-nav .site-navigation .site-menu > li.cta-button a:hover {
+/* .site-nav .site-navigation .site-menu > li.cta-button a:hover {
   color: #040404;
   background-color: transparent;
   border-color: rgba(255, 255, 255, 0.3);
-}
+} */
 
 
 /*Sticky navigation */
@@ -2434,7 +2434,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
             word-spacing: normal;
             position: relative;
             border-top: 50px solid #fff;
-            margin-top: 20px;
+            margin-top: 0px;
             background-image: url('../images/people/typo_bg_0.jpg'); /* Replace with the actual image path */
             background-repeat: no-repeat;
             background-size: contain;

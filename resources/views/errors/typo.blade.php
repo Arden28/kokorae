@@ -4,9 +4,9 @@
 
 
 @section('content')
-    <section id="k_typo_page"  class="k_typo_page h-100 d-flex" data-image="{{ asset('assets/images/people/typo_bg_0.jpg') }}">
+    <section class="k_typo_page h-100 d-flex" id="hero" style="margin-top: 0px;" data-image="{{ asset('assets/images/people/typo_bg_0.jpg') }}">
         <div class="container d-flex align-items-md-center">
-            <div class="k_typo_page_content mt-5 mt-sm-0 mb-md-5 pb-md-5">
+            <div class="k_typo_page_content mt-sm-0 mb-md-5 pb-md-5">
                 <div class="text-center-xs">
                     <h1 class="display-1 mt-0">
                         Oooh là !!
