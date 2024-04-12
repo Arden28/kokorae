@@ -182,7 +182,8 @@ class AppSelection extends Component
             $kompany = KoverCompany::create([
                 'kover_id' => $kover->id,
                 'name' => $this->company_name,
-                'domain_name' => str()->slug($this->company_name).'.'.env('APP_DOMAIN'),
+                'domain_name' => str()->slug($this->company_name),
+                'website_url' => str()->slug($this->company_name).'.'. env('APP_DOMAIN'),
                 'is_trial_mode' => true,
                 'trial_ends_at' => now()->addDays(8),
             ]);
@@ -196,6 +197,7 @@ class AppSelection extends Component
                 // 'company_address' => $this->company_address,
                 'personal_company' => true,
                 'domain_name' => $kompany->domain_name,
+                'website_url' => $kompany->website_url,
                 'enabled' => 1,
                 // 'email' => 'contact@kover.koverae.com',
                 // 'phone' => null, //+242065996409
@@ -233,13 +235,7 @@ class AppSelection extends Component
         // $companyInfoEncoded = implode(',', $companyInfo);
         // $companyInfoEncoded = encrypt($companyInfo); // Encrypt or hash the company info for security
 
-        if (config('app.env') === 'local') {
-            // The environment is local
-        $url = "http://{$companySlug}/configure?apps={$apps}&company={$companyInfo->name}&u_id={$companyInfo->user_id}";
-        } else {
-            // The environment is not local
-        $url = "https://{$companySlug}.koverae.com/configure?apps={$apps}&company={$companyInfo->name}&u_id={$companyInfo->user_id}";
-        }
+        $url = "http://{$companySlug}".".".env('APP_DOMAIN')."/configure?apps={$apps}&company={$companyInfo->name}&u_id={$companyInfo->user_id}";
 
 
         return redirect()->away($url);

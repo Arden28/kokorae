@@ -43,7 +43,14 @@
                   <td>0</td>
                   <td>0</td>
                   <td>
-                      <a href="http://{{ $company->domain_name }}/web" class="btn primary font-weight-bold">
+                    @php
+                        if(env('APP_ENV') == 'local')
+                            $url = 'http';
+                        elseif(env('APP_ENV') == 'production'){
+                            $url = 'https';
+                        }
+                    @endphp
+                      <a href="{{ $url }}://{{ $company->website_url }}/web" class="btn primary font-weight-bold">
                           Se Connecter
                       </a>
                   </td>

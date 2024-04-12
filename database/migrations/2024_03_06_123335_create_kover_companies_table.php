@@ -18,6 +18,7 @@ return new class extends Migration
             $table->unsignedBigInteger('kover_id')->nullable();
             $table->string('name');
             $table->string('domain_name')->nullable();
+            $table->string('website_url')->nullable();
             $table->string('website')->nullable();
             $table->integer('tax_report')->default((0));
             $table->string('logo')->nullable();
